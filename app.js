@@ -19,8 +19,10 @@ function createModelDescription(id, title, linkPrefix){
   model.id=id
   
   const header = document.createElement("h3")
+  header.innerText = '"'+title+'"'
   model.appendChild(header)
   
+
   const imageP = document.createElement("p")
   model.appendChild(imageP)
   
