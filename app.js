@@ -34,25 +34,23 @@ function createModelDescription(id, title, linkPrefix){
   imageP.appendChild(image)
   
   const instructionDiv = document.createElement("div")
-  instructionDiv.setAttribute("style", "border: 2px solid rgb(72, 21, 126); padding: 5px; width: fit-content; margin: 5px auto; text-align: center;")
+  // instructionDiv.setAttribute("style", "border: 2px solid rgb(72, 21, 126); padding: 5px; width: fit-content; margin: 5px auto; text-align: center;")
   model.appendChild(instructionDiv)
 
-  const linkDescription = document.createElement("p")
-  linkDescription.innerText = "Open a free instruction"
-  instructionDiv.appendChild(linkDescription)
+  const instructionButton = document.createElement("button")
+  instructionButton.onclick = function() {
+    window.open(linkPrefix+"_instrukcja.pdf", "_blank");
+  }
+  instructionButton.setAttribute("style", "background-color: rgb(72, 21, 126); color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;")
+  instructionButton.innerText = "Show free instructions"
+  instructionDiv.appendChild(instructionButton)
 
-  const nothing = document.createElement("p")
-  instructionDiv.appendChild(nothing)
-
-  const link = document.createElement("a")
-  link.setAttribute("href", linkPrefix+"_instrukcja.pdf")
-  link.setAttribute("target", "_blank")
-  link.innerText = "Open pdf file"
-  nothing.appendChild(link)
   document.getElementById("content").appendChild(model)
 
   return model
 }
+createModelDescription("river", "Escape across the river", "przeprawa_przez_rzekę/przeprawa_przez_rzekę")
+
 createModelDescription("szkieletor", "Time will end for everyone", "skeleton/skeleton")
 
 createModelDescription("skuter", "Hyperlash", "skuter/skuter" )

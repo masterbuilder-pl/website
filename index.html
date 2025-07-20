@@ -2,108 +2,86 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Legofan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Savate&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <title>Legofan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Savate&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-    <style>
-      .toggle-container {
-    margin: 10px auto;
-    width: fit-content;
-    text-align: center;
-}
+  <style>
+    .toggle-container {
+      margin: 10px auto;
+      width: fit-content;
+      text-align: center;
+    }
 
-.toggle-button {
-    background-color: #48157e;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-    display: inline-flex;
-    align-items: center;
-}
+    .toggle-button {
+      background-color: #48157e;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+    }
 
-.toggle-button span {
-    display: inline-block;
-    margin-left: 10px;
-    transition: transform 0.3s;
-}
+    .toggle-button span {
+      display: inline-block;
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
 
-.toggle-button.open span {
-    transform: rotate(90deg);
-}
+    .toggle-button.open span {
+      transform: rotate(90deg);
+    }
 
-.hidden-images {
-    display: none;
-    margin-top: 10px;
-}
-        body {
-            font-family: 'Savate', sans-serif;
-            font-size: 20px;
-            background-color: #ffffff;
-            text-align: center;
-            padding: 0px;
-            position: relative;
-           
-            
-        }
+    .hidden-images {
+      display: none;
+      margin-top: 10px;
+    }
 
-        h1 {
-            font-size: 110px;
-            margin-bottom: 1px;
-            margin-top: 1px;
-        }
+    body {
+      font-family: 'Savate', sans-serif;
+      font-size: 20px;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 0px;
+      position: relative;
 
-        p {
-            font-size: 18px;
-            margin-top: 5px;
-          
-                }
 
-    </style>
+    }
+
+    h1 {
+      font-size: 110px;
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 5px;
+
+    }
+  </style>
 </head>
 
 <body>
-    <p> </p>
-    <p> </p>
-    <hr style="border: none; border-top: 20px dotted red;">
-    <h1 style="display: inline-block; transform: scaleX(2);">Legofan</h1>
-    <p>My builds' instructions :)</p>
-    <hr style="border: none; border-top: 20px dotted red;">
-
-    
-
-      <h3>"Escape across the river"</h3>
-      <p><img src="przeprawa_przez_rzekę/przeprawa_przez_rzekę1.png" alt="Opis obrazka" width="700" 
-      style="border: 7px solid rgb(72, 21, 126); padding: 5px; width: fit-content; margin: 5px auto; text-align: center;">
-      </p>
-      
-      <div class="toggle-container">
-  <button id="toggleSkuter" class="toggle-button" onclick="toggleImages('toggleSkuter', 'extraSkuterImages')">
-    ➤ Show more images <span>▶</span>
-  </button>
+  <p> </p>
+  <p> </p>
+  <hr style="border: none; border-top: 20px dotted red;">
+  <h1 style="display: inline-block; transform: scaleX(2);">Legofan</h1>
+  <p>My builds' instructions :)</p>
+  <hr style="border: none; border-top: 20px dotted red;">
 
 
-  <div id="extraSkuterImages" class="hidden-images">
-    <img src="przeprawa_przez_rzekę/przeprawa_przez_rzekę2.png" alt="Dodatkowe zdjęcie 1" width="300" style="margin-bottom: 10px;">
-    <img src="przeprawa_przez_rzekę/przeprawa_przez_rzekę3.png" alt="Dodatkowe zdjęcie 2" width="300">
+
+  <div id="content">
+
   </div>
-      <div style="border: 2px solid rgb(72, 21, 126); padding: 5px; width: fit-content; margin: 5px auto; text-align: center;">
-        <p>Open a free instruction</p>
-        <p><a href="przeprawa_przez_rzekę/przeprawa_przez_rzekę_instrukcja.pdf" target="_blank">📄 Open pdf file</a></p>
-      </div>
 
-       
-
-<div id="content">
-
-</div>
- 
   <script src="app.js"></script>
-  
+
 </body>
 
 </html>
