@@ -38,7 +38,7 @@ function createModelDescription(id, title, linkPrefix){
   model.appendChild(instructionDiv)
 
   const linkDescription = document.createElement("p")
-  linkDescription.innerText = "Otwórz darmową instrukcję"
+  linkDescription.innerText = "Open a free instruction"
   instructionDiv.appendChild(linkDescription)
 
   const nothing = document.createElement("p")
@@ -47,20 +47,20 @@ function createModelDescription(id, title, linkPrefix){
   const link = document.createElement("a")
   link.setAttribute("href", linkPrefix+"_instrukcja.pdf")
   link.setAttribute("target", "_blank")
-  link.innerText = "Otwórz plik pdf"
+  link.innerText = "Open pdf file"
   nothing.appendChild(link)
   document.getElementById("content").appendChild(model)
 
   return model
 }
-createModelDescription("szkieletor", "Czas się skończy dla każdego", "skeleton/skeleton")
+createModelDescription("szkieletor", "Time will end for everyone", "skeleton/skeleton")
 
-createModelDescription("skuter", "Skuter na medal", "skuter/skuter" )
+createModelDescription("skuter", "Hyperlash", "skuter/skuter" )
 
-createModelDescription("uczta", "Uczta na wieki", "uczta/uczta")
+createModelDescription("uczta", "Feast for centuries", "uczta/uczta")
 
-createModelDescription("miniBaza", "Mini Baza", "stanowisko_klona/stanowisko_klona")
+createModelDescription("miniBaza", "Mini base", "stanowisko_klona/stanowisko_klona")
 
-createModelDescription("stragan","Stragan na zamku", "średniowieczny_stragan/średniowieczny_stragan")
+createModelDescription("stragan","Medieval food stall", "średniowieczny_stragan/średniowieczny_stragan")
 
 createModelDescription("droidowySprinter","Droidowy sprinter","droidowy_sprinter/droidowy_sprinter")
