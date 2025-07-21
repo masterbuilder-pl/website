@@ -38,7 +38,7 @@ const translations = {
       uczta: 'Feast for centuries',
       miniBaza: 'Mini base',
       stragan: 'Medieval food stall',
-      droidowySprinter: 'Droidowy sprinter',
+      droidowySprinter: 'Droid sprinter',
     },
     button: 'Show free instructions',
     heading: 'Legofan',
@@ -72,8 +72,8 @@ function createModelDescription(id, title, linkPrefix, lang){
   const image = document.createElement('img');
   image.setAttribute('src', linkPrefix + '.png');
   image.setAttribute('alt', title);
-  image.setAttribute('width', '700');
-  image.setAttribute('style', 'border: 7px solid rgb(72, 21, 126); padding: 5px; width: fit-content; margin: 5px auto; text-align: center;');
+  image.setAttribute('width', '800px');
+  image.setAttribute('style', 'border: 7px solid rgb(72, 21, 126); padding: 5px; margin: 5px auto; text-align: center;');
   imageP.appendChild(image);
   const instructionDiv = document.createElement('div');
   model.appendChild(instructionDiv);
