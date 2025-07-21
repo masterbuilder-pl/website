@@ -16,6 +16,7 @@ function toggleImages(buttonId, contentId) {
 const translations = {
   pl: {
     models: {
+      books: 'Książki dla każdego',
       river: 'Ucieczka przez rzekę',
       szkieletor: 'Czas kończy się dla wszystkich',
       skuter: 'Hiperskok',
@@ -30,6 +31,7 @@ const translations = {
   },
   en: {
     models: {
+      books: 'Books for everyone',
       river: 'Escape across the river',
       szkieletor: 'Time will end for everyone',
       skuter: 'Hyperlash',
@@ -47,6 +49,7 @@ const translations = {
 function renderContent(lang) {
   const content = document.getElementById('content');
   content.innerHTML = '';
+  createModelDescription('books', translations[lang].models.books, 'books/books', lang);
   createModelDescription('river', translations[lang].models.river, 'przeprawa_przez_rzekę/przeprawa_przez_rzekę', lang);
   createModelDescription('szkieletor', translations[lang].models.szkieletor, 'skeleton/skeleton', lang);
   createModelDescription('skuter', translations[lang].models.skuter, 'skuter/skuter', lang);
