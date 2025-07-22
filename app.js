@@ -51,20 +51,21 @@ const translations = {
 function renderContent(lang) {
   const content = document.getElementById('content');
   content.innerHTML = '';
-  createModelDescription('palpatine', translations[lang].models.palpatine, 'palpatin/palpatin', lang);
-  createModelDescription('books', translations[lang].models.books, 'books/books', lang);
-  createModelDescription('river', translations[lang].models.river, 'przeprawa_przez_rzekę/przeprawa_przez_rzekę', lang);
-  createModelDescription('szkieletor', translations[lang].models.szkieletor, 'skeleton/skeleton', lang);
-  createModelDescription('skuter', translations[lang].models.skuter, 'skuter/skuter', lang);
-  createModelDescription('uczta', translations[lang].models.uczta, 'uczta/uczta', lang);
-  createModelDescription('miniBaza', translations[lang].models.miniBaza, 'stanowisko_klona/stanowisko_klona', lang);
-  createModelDescription('stragan', translations[lang].models.stragan, 'średniowieczny_stragan/średniowieczny_stragan', lang);
-  createModelDescription('droidowySprinter', translations[lang].models.droidowySprinter, 'droidowy_sprinter/droidowy_sprinter', lang);
+  createModelDescription('palpatine', 'palpatin/palpatin', lang);
+  createModelDescription('books', 'books/books', lang);
+  createModelDescription('river',  'przeprawa_przez_rzekę/przeprawa_przez_rzekę', lang);
+  createModelDescription('szkieletor', 'skeleton/skeleton', lang);
+  createModelDescription('skuter', 'skuter/skuter', lang);
+  createModelDescription('uczta', 'uczta/uczta', lang);
+  createModelDescription('miniBaza', 'stanowisko_klona/stanowisko_klona', lang);
+  createModelDescription('stragan', 'średniowieczny_stragan/średniowieczny_stragan', lang);
+  createModelDescription('droidowySprinter', 'droidowy_sprinter/droidowy_sprinter', lang);
   document.querySelector('h1').innerText = translations[lang].heading;
   document.querySelectorAll('p')[2].innerText = translations[lang].subtitle;
 }
 
-function createModelDescription(id, title, linkPrefix, lang){
+function createModelDescription(id, linkPrefix, lang){
+  const title = translations[lang].models[id]
   const model = document.createElement('div');
   model.id = id;
   const header = document.createElement('h3');
