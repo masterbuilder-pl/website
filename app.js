@@ -16,6 +16,7 @@ function toggleImages(buttonId, contentId) {
 const translations = {
   pl: {
     models: {
+      zamek: 'Sredniowieczne wrota',
       palpatine: 'Zdrada w senacie',
       books: 'Książki dla każdego',
       river: 'Ucieczka przez rzekę',
@@ -32,6 +33,7 @@ const translations = {
   },
   en: {
     models: {
+      zamek: 'Medieval gates',
       palpatine: 'Betreyal in the senate',
       books: 'Books for everyone',
       river: 'Escape across the river',
@@ -51,6 +53,7 @@ const translations = {
 function renderContent(lang) {
   const content = document.getElementById('content');
   content.innerHTML = '';
+  createModelDescription('zamek', 'zamek/zamek', lang);
   createModelDescription('palpatine', 'palpatin/palpatin', lang);
   createModelDescription('books', 'books/books', lang);
   createModelDescription('river',  'przeprawa_przez_rzekę/przeprawa_przez_rzekę', lang);
