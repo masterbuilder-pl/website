@@ -16,6 +16,7 @@ function toggleImages(buttonId, contentId) {
 const translations = {
   pl: {
     models: {
+      kuchnia: 'Czas na gotowanie!',
       zamek: 'Sredniowieczne wrota',
       palpatine: 'Zdrada w senacie',
       books: 'Książki dla każdego',
@@ -33,6 +34,7 @@ const translations = {
   },
   en: {
     models: {
+      kuchnia: 'Cooking time!',
       zamek: 'Medieval gates',
       palpatine: 'Betreyal in the senate',
       books: 'Books for everyone',
@@ -53,6 +55,7 @@ const translations = {
 function renderContent(lang) {
   const content = document.getElementById('content');
   content.innerHTML = '';
+  createModelDescription('kuchnia', 'kitchen/kitchen', lang);
   createModelDescription('zamek', 'zamek/zamek', lang);
   createModelDescription('palpatine', 'palpatin/palpatin', lang);
   createModelDescription('books', 'books/books', lang);
@@ -80,7 +83,7 @@ function createModelDescription(id, linkPrefix, lang){
   image.setAttribute('src', linkPrefix + '.png');
   image.setAttribute('alt', title);
   image.setAttribute('width', '800px');
-  image.setAttribute('style', 'border: 7px solid rgb(72, 21, 126); padding: 5px; margin: 5px auto; text-align: center;');
+  image.setAttribute('style', 'border: 15px solid rgb(72, 21, 126); padding: 5px; margin: 5px auto; text-align: center;');
   imageP.appendChild(image);
   const instructionDiv = document.createElement('div');
   model.appendChild(instructionDiv);
