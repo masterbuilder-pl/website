@@ -4,6 +4,7 @@ date: 2025-07-18
 layout: layout.njk
 tags: [moc]
 image: /public/river/image-1.png
+instruction: /public/river/instruction.pdf
 ---
 
 In this medium-sized Star Wars diorama, three clone troopers make their way through a murky river, fleeing from advancing Separatist forces. The water is fast-flowing, turbulent, and dirty—the perfect backdrop for a dramatic retreat. Surrounded by rocks and lush vegetation, the scenery creates a subdued yet dynamic atmosphere. This MOC combines intense action with meticulous attention to detail, creating a story of survival in the face of combat.

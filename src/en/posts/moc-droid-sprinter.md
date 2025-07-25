@@ -4,6 +4,7 @@ date: 2025-07-18
 layout: layout.njk
 tags: [moc]
 image: /public/droid-sprinter/image-1.png
+instruction: /public/droid-sprinter/instruction.pdf
 language: en
 ---
 
