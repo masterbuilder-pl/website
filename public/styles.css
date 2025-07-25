@@ -164,6 +164,18 @@ footer {
   border-radius: 0.5rem;
   margin: 1rem 0;
 }
+.instruction-button {
+  background-color: rgb(72, 21, 126);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   main {
     padding: 1rem;
