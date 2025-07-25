@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function () {
+      const supported = ['pl', 'en'];
+      const fallback = 'en';
+
+      const lang = navigator.language || navigator.userLanguage || '';
+      const shortLang = lang.slice(0, 2).toLowerCase();
+
+      const redirectTo = supported.includes(shortLang) ? shortLang : fallback;
+      window.location.replace(`/${redirectTo}/`);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
