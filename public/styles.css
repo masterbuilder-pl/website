@@ -117,8 +117,8 @@ footer {
   background: #ffd600;
 }
 .search-tile-img {
-  max-width: 140px;
-  max-height: 140px;
+  max-width: 160px;
+  max-height: 150px;
   border-radius: 8px;;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
@@ -199,8 +199,8 @@ footer {
     display: flex;
   }
   .search-tile-img {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 160px;
+    max-height: 150px;
   }
   .search-tile-content {
     display: block;
@@ -222,9 +222,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .post-main-image, .post-content img {
-    max-width: 100%;
-    border-radius: 10px;
+
   }
   .post-title {
     font-size: 1.5rem;
