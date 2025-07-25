@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "Legofan.pl" }}</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <img src="/public/favicon.png" alt="Legofan logo" id="logo" width="100" height="100">
+      <nav>
+        <ul>
+          {% for item in site.menu %}
+            <li><a href="/{{ language }}/{{ item.url }}">{{ item.label[language] }}</a></li>
+          {% endfor %}
+          <li><a href="https://buycoffee.to/legofan" target="_blank">{{ translations[language].coffee }}</a></li>
+          <li>
+            {% for lang in site.languages %}
+              {% if lang != language %}
+                <a href="/{{ lang }}/" title="{{ lang | upper }}">
+                  {% if lang == "en" %}
+                    <img src="/public/flags/en.png" alt="English" style="vertical-align:middle;" />
+                  {% elif lang == "pl" %}
+                    <img src="/public/flags/pl.png" alt="Polski" style="vertical-align:middle;" />
+                  {% endif %}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </li>
+        </ul>
+      </nav>
+      <form action="/{{ language }}/search/">
+        <input type="text" name="q" placeholder="{{ translations[language].search }}...">          
+      </form>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; Legofan.pl</p>
+  </footer>
+</body>
+</html>
