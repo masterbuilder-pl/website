@@ -25,4 +25,8 @@ Tak wygląda poprawnie zrobiony „pasek”.
 <img src="/public/articles/elementy.png" alt="'elementy'" class="post-image" />
 4.	I ostatnia rzecz – tile, najtrudniejsze do upchania. Możecie to zrobić trzema metodami – albo wrzucacie jak wlezie, możecie zastoswać jako "upychacz" (tylko te małe) do punktu trzeciego, lub układacie warstwami. Jak się pewnie domyślacie ostatnia metoda jest bardzo czasochłonna, dlatego mało osób ją stosuje (włącznie ze mną). Jeśli jednak kupujecie tile 2×4 zalecam jednak poukładać je, ponieważ ich rozmiary ułatwią robienie tego. 
 ### Możecie pomieszać te rodzaje układania – po jednej stronie cegiełki, po drugiej rośliny – ważne by stosować się do powyższych zasad.
-Kupowanie klocków w PaB na początku nie jest prostą sprawą, ale po paru pudełkach już wiesz co robisz. Podsumowując: starajcie się nie wrzucać luzem klocków budowlanych, układać je, a elementy detaliczne i rośliny upychać mniejszymi. Starjcie się też nie kupować dużych klocków, które zajmują miejsce, a są bardzo tanie. W ten sposób na jednym dużym pudełku PaB jesteście w stanie zaoszczędzić nawet 150 zł. 
+Kupowanie klocków w PaB na początku nie jest prostą sprawą, ale po paru pudełkach już wiesz co robisz. Podsumowując: 
+- starajcie się nie wrzucać luzem klocków budowlanych, a układać je, elementy detaliczne i rośliny upychać mniejszymi 
+- starjcie się też nie kupować dużych klocków, które zajmują miejsce, a są bardzo tanie
+
+W ten sposób na jednym dużym pudełku PaB jesteście w stanie zaoszczędzić nawet 150 zł. 
