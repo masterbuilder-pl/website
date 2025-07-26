@@ -10,13 +10,15 @@
 <body>
   <header>
     <div class="header-row">
-      <img src="/public/favicon.png" alt="Legofan logo" id="logo" width="100" height="100">
       <nav>
         <ul>
+          <li>      
+            <img src="/public/favicon.png" alt="Legofan logo" id="logo" width="80" height="80">
+          </li>
+
           {% for item in site.menu %}
             <li><a href="/{{ language }}/{{ item.url }}">{{ item.label[language] }}</a></li>
           {% endfor %}
-          <li><a href="https://buycoffee.to/legofan" target="_blank">{{ translations[language].coffee }}</a></li>
           <li>
             {% for lang in site.languages %}
               {% if lang != language %}
@@ -30,11 +32,13 @@
               {% endif %}
             {% endfor %}
           </li>
+          <li>
+             <form action="/{{ language }}/search/">
+             <input type="text" name="q" placeholder="{{ translations[language].search }}...">          
+             </form>
+          </li>
         </ul>
       </nav>
-      <form action="/{{ language }}/search/">
-        <input type="text" name="q" placeholder="{{ translations[language].search }}...">          
-      </form>
     </div>
   </header>
 
