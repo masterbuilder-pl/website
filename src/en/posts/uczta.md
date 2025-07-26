@@ -1,6 +1,6 @@
 ---
 title: Feast for centuries
-date: 2025-07-23
+date: 2025-07-22
 layout: layout.njk
 tags: [moc]
 image: /public/uczta/uczta.png

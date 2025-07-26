@@ -1,6 +1,6 @@
 ---
 title: Medieval gates
-date: 2025-07-23
+date: 2025-07-24
 layout: layout.njk
 tags: [moc]
 image: /public/zamek/zamek.png
