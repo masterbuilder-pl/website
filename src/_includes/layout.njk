@@ -4,6 +4,11 @@
   {% if image %}
     <img src="{{ image }}" alt="{{ title }}" class="post-main-image" />
   {% endif %}
+  {% if instruction %}
+    <button class="instruction-button" onclick="window.open('{{ instruction }}', '_blank')">
+      {{ translations[language].button }}
+    </button>
+  {% endif %}
   <div class="post-content">
     {{ content | safe }}
   </div>
