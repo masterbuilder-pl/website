@@ -16,6 +16,10 @@ module.exports = function (eleventyConfig) {
     if (!tag) return arr;
     return arr.filter(item => item.data.tags && item.data.tags.includes(tag));
   });
+  eleventyConfig.addFilter("sortByDate", function(arr) {
+    if (!Array.isArray(arr)) return [];
+    return arr.sort((a, b) => b.date - a.date);
+  });
 
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addCollection("posts", function (collectionApi) {

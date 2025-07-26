@@ -48,7 +48,7 @@ nav ul li a {
   text-decoration: none;
   color: #222;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
 }
@@ -117,8 +117,8 @@ footer {
   background: #ffd600;
 }
 .search-tile-img {
-  max-width: 140px;
-  max-height: 140px;
+  max-width: 160px;
+  max-height: 150px;
   border-radius: 8px;;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
@@ -164,6 +164,18 @@ footer {
   border-radius: 0.5rem;
   margin: 1rem 0;
 }
+.instruction-button {
+  background-color: rgb(72, 21, 126);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   main {
     padding: 1rem;
@@ -181,14 +193,14 @@ footer {
   }
   .search-tile-img-wrap {
     width: 100%;
-    height: 120px;
+    height: 160px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
   .search-tile-img {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 160px;
+    max-height: 150px;
   }
   .search-tile-content {
     display: block;
@@ -210,9 +222,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .post-main-image, .post-content img {
-    max-width: 100%;
-    border-radius: 10px;
+
   }
   .post-title {
     font-size: 1.5rem;

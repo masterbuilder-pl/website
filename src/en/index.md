@@ -6,4 +6,4 @@ language: en
 
 
 {% import "../_includes/post-tiles.njk" as pt %}
-{{ pt.post_tiles(collections.posts | reverse | selectLang('en')) }}
+{{ pt.post_tiles(collections.posts | sortByDate | selectLang('en')) }}
