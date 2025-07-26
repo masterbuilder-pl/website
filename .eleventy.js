@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("favicon.png");
   eleventyConfig.addCollection("posts", function (collectionApi) {
     const languages = ["pl", "en"];
     let allPosts = [];
