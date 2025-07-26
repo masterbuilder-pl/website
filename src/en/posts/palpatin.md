@@ -1,6 +1,6 @@
 ---
 title: Betreyal in the senate
-date: 2025-07-22
+date: 2025-07-19
 layout: layout.njk
 tags: [moc]
 image: /public/palpatin/palpatin.png

@@ -1,6 +1,6 @@
 ---
 title: Escape across the river
-date: 2025-07-18
+date: 2025-07-17
 layout: layout.njk
 tags: [moc]
 image: /public/river/image-1.png

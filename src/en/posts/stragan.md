@@ -1,6 +1,6 @@
 ---
 title: Medieval food stall
-date: 2025-07-23
+date: 2025-07-16
 layout: layout.njk
 tags: [moc]
 image: /public/średniowieczny_stragan/średniowieczny_stragan.png
