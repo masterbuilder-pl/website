@@ -2,7 +2,7 @@
   "url": "https://legofan.pl",
   "languages": ["pl", "en"],
   "menu": [
-    {"label": {"pl": "Artykuły", "en": "News"}, "url": "", "tag": "news"},
+    {"label": {"pl": "Aktualizacje", "en": "News"}, "url": "", "tag": "news"},
     {"label": {"pl": "MOC-y", "en": "MOCs"}, "url": "mocs/", "tag": "moc"}
   ]
 }
