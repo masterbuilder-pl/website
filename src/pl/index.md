@@ -1,5 +1,5 @@
 ---
-title: Aktualności
+title: Artykuły
 layout: layout.njk
 language: pl
 ---
