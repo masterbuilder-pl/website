@@ -22,6 +22,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("favicon.png");
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addCollection("posts", function (collectionApi) {
     const languages = ["pl", "en"];
     let allPosts = [];
