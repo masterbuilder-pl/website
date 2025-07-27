@@ -3,7 +3,7 @@ title: Rebuilding Lego sets
 date: 2025-07-26
 layout: layout.njk
 image: /public/articles/zestawiki.jpg
-tags: [moc]
+tags: [post, news, sets]
 language: pl
 ---
 
