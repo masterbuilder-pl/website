@@ -1,6 +1,6 @@
 ---
 title: Budujesz co czujesz
-date: 2025-07-26
+date: 2025-07-27
 layout: layout.njk
 image: /public/articles/bcc.jpg
 tags: [artykuł, konkurs, budujesz]
@@ -8,7 +8,7 @@ language: pl
 ---
 
 ## Whatsappowy konkurs – Budujesz co czujesz.
-Na whatsappowym kanale Lego (https://whatsapp.com/channel/0029VbAfb3sLY6dFiDBAAx35) już drugi, z okazji 125 obserwujących, konkurs. Postanowiliśmy go zorganizować , ja i inni administratorzy kanału. A co trzeba zrobić? Wystarczy trochę klocków i wolnego czasu – macie za zadanie… 
+Na whatsappowym kanale [Lego](https://whatsapp.com/channel/0029VbAfb3sLY6dFiDBAAx35) już drugi, z okazji 125 obserwujących, konkurs. Postanowiliśmy go zorganizować , ja i inni administratorzy kanału. A co trzeba zrobić? Wystarczy trochę klocków i wolnego czasu – macie za zadanie… 
 ### Co można zbudować?
 Temat jest dowolny, od bazy klonów z Gwiezdnych Wojen, przez superszybkie auto, po cichą wioskę nadmorską. Nie narzucamy tematu, ponieważ, nie każdy ma klocki do zbudowania wszystkiego. 😉
 **Czas wysyłania prac to 22 sierpnia** (12:00), zdajemy sobie sprawę, że możecie być na wakacjach i nie mieć akurat klocków pod ręką. Wyniki ogłosimy albo tego samego dnia, albo 23 sierpnia. 
