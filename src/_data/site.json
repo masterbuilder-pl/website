@@ -1,5 +1,5 @@
 {
-  "url": "https://legofan.pl",
+  "url": "https://masterbuilder.pl",
   "languages": ["pl", "en"],
   "menu": [
     {"label": {"pl": "Aktualizacje", "en": "News"}, "url": "", "tag": "news"},
