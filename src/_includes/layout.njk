@@ -17,10 +17,7 @@
     <div id="disqus_thread"></div>
     <script>
       var disqus_config = function () {
-        var url = '{{ page.url | url }}';
-        if (window.location.hostname === 'localhost' && window.location.port === '8080') {
-          url = url.replace('localhost:8080', 'legofan.pl');
-        }
+        var url = 'https://legofan.pl/' + '{{ page.url | url }}';
         this.page.url = url;
         this.page.identifier = '{{ page.url }}';
         this.language = '{{ language }}';
