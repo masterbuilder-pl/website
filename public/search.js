@@ -27,7 +27,7 @@ fetch('/search-index.json')
         div.innerHTML = `
           <a href="${doc.url}" class="search-tile-link">
             <div class="search-tile-img-wrap">
-              <img src="${doc.image || '/public/favicon.png'}" alt="${doc.title}" class="search-tile-img" />
+              <img src="${doc.image || '/favicon.png'}" alt="${doc.title}" class="search-tile-img" />
             </div>
             <div class="search-tile-content">
               <h3>${doc.title}</h3>
