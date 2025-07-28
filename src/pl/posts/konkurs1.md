@@ -8,7 +8,7 @@ language: pl
 ---
 
 ## FotoLego 
-Pierwszy konkurs na whatsappowym kanale Lego – z okazji 100 obserwujących Każdy uczestnik ma za zadanie sfotografować klocki Lego… 
+Pierwszy konkurs na whatsappowym kanale [Lego](https://whatsapp.com/channel/0029VbAfb3sLY6dFiDBAAx35) – z okazji 100 obserwujących Każdy uczestnik ma za zadanie sfotografować klocki Lego… 
 **Co trzeba zrobić?**
 Musisz wysłać zdjęcie jednej lub dwóch figurek. Możesz także dać jakiś zestaw, w tle, czy na pierwszym planie, byle było na zdjęciu widać figurkę lub figurki. Ważne jest, aby zdjęcie zostało wykonane na dworze, a nie w środku jakiegoś budynku. W ogrodzie, lesie, na plaży  - gdzie akurat jesteś i masz przy sobie figurkę.
 Czas przesyłania prac to do **10 sierpnia**, a wyniki zostaną ogłoszone 11 albo 12, zależy ile prac zostanie wysłanych. 
