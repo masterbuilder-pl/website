@@ -3,7 +3,7 @@ title: Budujesz co czujesz
 date: 2025-07-27
 layout: layout.njk
 image: /public/articles/bcc.jpg
-tags: [artykuł, konkurs, budujesz]
+tags: [post, konkurs, budujesz]
 language: pl
 ---
 
