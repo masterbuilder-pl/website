@@ -3,7 +3,7 @@ title: Książki dla każdego !
 date: 2025-07-23
 layout: layout.njk
 tags: [moc]
-image: /public/books/books.png
+image: /public/books/books.jpg
 instruction: /public/books/books_instrukcja.pdf
 language: pl
 ---
