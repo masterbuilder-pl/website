@@ -3,7 +3,7 @@ title: Średniowieczne wrota
 date: 2025-07-24
 layout: layout.njk
 tags: [moc]
-image: /public/zamek/zamek.png
+image: /public/zamek/zamek.jpg
 instruction: /public/zamek/zamek_instrukcja.pdf
 language: pl
 ---
