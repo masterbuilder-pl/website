@@ -32,6 +32,10 @@ Go through the list and tick off parts you already have.
 - Sorting by color will help.  
 - If you couldn’t print the list, you can mark pieces lightly in the manual.
 
+An example of a printed instruction page for rebuilding a LEGO set.
+
+<img src="/public/articles/lista.jpg" alt="'lista'" class="post-image" />
+
 ### 5. Missing Pieces?  
 It’s totally normal to be missing a few (or a dozen) parts.  
 - Keep looking through your bricks.  
