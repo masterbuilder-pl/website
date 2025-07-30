@@ -59,4 +59,4 @@ Have a dream set that's old and expensive? You can try to rebuild it this way to
 - Find what you can at home
 - Buy the rest online or from local stores that sell Lego by weight
 
-Using this method, I saved about **200 PLN** when rebuilding a set (though I didn’t have the minifigures).
+Using this method, I saved about **50 USD** when rebuilding a set (though I didn’t have the minifigures).
