@@ -60,3 +60,17 @@ Have a dream set that's old and expensive? You can try to rebuild it this way to
 - Buy the rest online or from local stores that sell Lego by weight
 
 Using this method, I saved about **50 USD** when rebuilding a set (though I didn’t have the minifigures).
+
+## 🔗 Additional Tips from the Community
+
+If you're dealing with a *really* large pile of unsorted LEGO and want to identify which sets are in there before rebuilding, I highly recommend this excellent [Reddit guide on using BrickLink for set identification](https://www.reddit.com/r/lego/comments/1agdgog/how_to_search_for_sets_on_bricklink/?rdt=55216).
+
+It dives deep into:
+- Using BrickLink’s multi-part search to identify sets based on a few unique pieces  
+- Linking with Brickset to track your collection  
+- Using minifigs and decorated parts for faster identification  
+- Creating BrickLink wanted lists as checklists for rebuilding  
+
+I still personally prefer starting with sorting by color and working from the manuals (physical or PDF), but their approach works great if you have no idea what’s in your collection or are missing instructions.
+
+The two methods can complement each other really well — especially if you want to rebuild multiple sets with minimal buying. I might update this guide in the future to combine both workflows.

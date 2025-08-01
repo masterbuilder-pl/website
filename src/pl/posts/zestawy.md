@@ -23,3 +23,17 @@ Wydrukowana strona z instrukcji z "odhaczonymi" elementami:
 
 Jest to bardzo czasochłonny sposób, ale najmniej spośród tych, które istnieją. Szczególnie jeśli macie do odbudowania nie jeden zestaw, a kilka, podział na kolory bardzo przyspieszy ten proces. Możecie także składać zestaw i po kolei szukać elementów (tak jak w instrukcji), ale zajmie to zdecydowanie dużo więcej czasu, niż sposób, którym się z wami podzieliłem. 
 Może macie też marzenie – zestaw, który jest bardzo stary i drogi. Możecie spróbować skompletować go w ten sam sposób – poszukać trochę elementów w domu, a resztę kupić przez internet, lub w stacjonarnych sklepach, gdzie można kupić klocki na wagę. W ten sposób ja, kupując klocki do zestawu zaoszczędziłem około 200 zł (Oczywiście nie miałem figurek).
+
+## 🔗 Dodatkowe wskazówki
+
+Jeśli masz do czynienia z *naprawdę* dużą stertą nieposortowanych klocków LEGO i chcesz zidentyfikować, jakie zestawy się tam znajdują przed rozpoczęciem odbudowy, gorąco polecam ten świetny [poradnik na Reddicie dotyczący korzystania z BrickLinka do identyfikacji zestawów](https://www.reddit.com/r/lego/comments/1agdgog/how_to_search_for_sets_on_bricklink/?rdt=55216).
+
+Poradnik zawiera m.in.:
+- Jak korzystać z wyszukiwania wielu elementów na BrickLinku, aby rozpoznać zestaw na podstawie kilku unikalnych części  
+- Jak połączyć konto z Brickset, żeby śledzić swoją kolekcję  
+- Jak wykorzystać minifigurki i ozdobione elementy do szybszej identyfikacji  
+- Jak tworzyć listy “wanted” na BrickLinku jako checklisty do odbudowy  
+
+Osobiście wolę zaczynać od sortowania kolorami i pracy z instrukcjami (fizycznymi lub w PDF), ale ich podejście świetnie się sprawdza, gdy nie masz pojęcia, co znajduje się w kolekcji albo brakuje Ci instrukcji.
+
+Obie metody mogą się świetnie uzupełniać — szczególnie jeśli chcesz odbudować wiele zestawów przy minimalnych zakupach. Możliwe, że zaktualizuję ten poradnik w przyszłości, łącząc oba podejścia.
