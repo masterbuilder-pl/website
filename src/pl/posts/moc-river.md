@@ -2,7 +2,7 @@
 title: Ucieczka przez rzekę
 date: 2025-07-17
 layout: layout.njk
-tags: [moc]
+tags: [moc, Star Wars]
 image: /public/river/image-1.jpg
 instruction: /public/river/instruction.pdf
 language: pl

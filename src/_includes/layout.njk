@@ -1,6 +1,20 @@
 {% extends "base.njk" %}
 {% block content %}
   <h1 class="post-title">{{ title }}</h1>
+
+  <div class="post-meta-header">
+    <span class="post-date">{{ page.date | readableDate(language) }}</span>
+    {% if tags %}
+      <div class="tags-container">
+        {% for tag in tags %}
+          {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
+            <a href="/{{ language }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
   {% if image %}
     <img src="{{ image }}" alt="{{ title }}" class="post-main-image" />
   {% endif %}
