@@ -6,17 +6,17 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
   });
 
-  eleventyConfig.addFilter("selectLang", function(arr, lan) {
+  eleventyConfig.addFilter("selectLang", function (arr, lan) {
     if (!Array.isArray(arr)) return [];
     if (!lan) return arr;
     return arr.filter(item => item.data.language === lan);
   });
-  eleventyConfig.addFilter("selectTag", function(arr, tag) {
+  eleventyConfig.addFilter("selectTag", function (arr, tag) {
     if (!Array.isArray(arr)) return [];
     if (!tag) return arr;
     return arr.filter(item => item.data.tags && item.data.tags.includes(tag));
   });
-  eleventyConfig.addFilter("sortByDate", function(arr) {
+  eleventyConfig.addFilter("sortByDate", function (arr) {
     if (!Array.isArray(arr)) return [];
     return arr.sort((a, b) => b.date - a.date);
   });
@@ -36,6 +36,40 @@ module.exports = function (eleventyConfig) {
     });
     return allPosts.sort((a, b) => b.date - a.date);
 
+  });
+  eleventyConfig.addCollection("tagList", (collectionApi) => {
+    const tagsByLang = {};
+    // Go through each post
+    collectionApi.getFilteredByTag("post").forEach(item => {
+        const lang = item.data.language;
+        if (item.data.tags) {
+            // Create a Set for each language if it doesn't exist
+            if (!tagsByLang[lang]) {
+                tagsByLang[lang] = new Set();
+            }
+            // Add tags to the correct language set
+            item.data.tags.forEach(tag => {
+                // Exclude tags used for primary navigation
+                if (tag !== 'post' && tag !== 'news' && tag !== 'moc') {
+                    tagsByLang[lang].add(tag);
+                }
+            });
+        }
+    });
+
+    // Create a flat list of objects like { tag: "lego", lang: "en" }
+    const tagList = [];
+    for (const lang in tagsByLang) {
+        tagsByLang[lang].forEach(tag => {
+            tagList.push({ tag, lang });
+        });
+    }
+    return tagList;
+  });
+  
+  // Format date for display
+  eleventyConfig.addFilter("readableDate", (dateObj, lang = "en") => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).setLocale(lang).toFormat("dd LLLL yyyy");
   });
 
   return {

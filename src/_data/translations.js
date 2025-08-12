@@ -4,13 +4,15 @@ module.exports = {
     button: "Pokaż darmową instrukcję",
     heading: "MasterBuilder",
     subtitle: "Instrukcje moich budowli :)",
-    search: "Szukaj"
+    search: "Szukaj",
+    tagged_posts: "Posty z tagiem"
   },
   en: {
     coffee: 'Buy me a coffee',
     button: "Show free instructions",
     heading: "MasterBuilder",
     subtitle: "My builds' instructions :)",
-    search: "Search"
+    search: "Search",
+    tagged_posts: "Posts tagged with"  
   }
 };

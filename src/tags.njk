@@ -1,0 +1,19 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: item
+permalink: "/{{ item.lang }}/tags/{{ item.tag | slugify }}/"
+layout: layout.njk
+eleventyExcludeFromCollections: true
+---
+{# Set the language based on the paginated item #}
+{% set language = item.lang %}
+{# Filter posts for the specific tag and language #}
+{% set postsForTag = collections.posts | selectLang(language) | selectTag(item.tag) %}
+
+<h1>{{ translations[language].tagged_posts }} <span class="tag-highlight">{{ item.tag }}</span></h1>
+
+{# This import path is now correct for a file in the src/ directory #}
+{% import "./_includes/post-tiles.njk" as pt %}
+{{ pt.post_tiles(postsForTag) }}
