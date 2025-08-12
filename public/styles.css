@@ -56,7 +56,7 @@ nav ul li a:hover {
   background: #ff3c00;
   color: #fff;
 }
-form[action="/search/"] {
+form[action="/en/search/"], form[action="/pl/search/"] {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -89,68 +89,10 @@ footer {
   color: #888;
   font-size: 1rem;
 }
-.search-tile {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  transition: box-shadow 0.2s;
-}
-.search-tile-link {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-}
-.search-tile-img-wrap {
-  flex-shrink: 0;
-  width: 180px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffd600;
-}
-.search-tile-img {
-  max-width: 160px;
-  max-height: 150px;
-  border-radius: 8px;;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-}
-.search-tile-content {
-  padding: 1rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.search-tile-content h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-}
-.post-meta {
-  margin: 0 0 0.5rem 0;
-}
-.search-tile-content .post-date {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #888;
-  font-size: 0.95rem;
-}
-.search-tile-content p {
-  margin: 0;
-  color: #444;
-  font-size: 1rem;
-}
 .post-title {
   font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .post-main-image {
   display: block;
@@ -161,7 +103,6 @@ footer {
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
-
 .post-content {
   font-size: 1.15rem;
   line-height: 1.7;
@@ -182,19 +123,104 @@ footer {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 1rem 0;
   cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
 }
-/* Container for tags to manage layout */
-.tags-container {
-  display: flex; 
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: center;
-  margin-top: 0.5rem;
+.instruction-button:hover {
+    background-color: rgb(90, 30, 150);
 }
 
-/* Individual tag style */
+/* --- FINAL CORRECTED STYLES FOR POST TILES --- */
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-tile {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.search-tile:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.search-tile-link {
+  display: flex;
+  /* Default (desktop) layout: image left, content right */
+  flex-direction: row;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.search-tile-img-wrap {
+  flex-shrink: 0;
+  width: 220px;
+  background: #ffd600; /* Yellow frame restored */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.search-tile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Makes the image a square */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.search-tile-content {
+  padding: 1rem 1.5rem;
+  flex: 1; /* Allows this container to grow and fill space */
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+}
+
+.search-tile-main {
+  flex-grow: 1; /* Pushes the tags container to the bottom */
+}
+
+.search-tile-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.search-tile-content .post-meta {
+  margin-bottom: 0.75rem;
+}
+
+.search-tile-content .post-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.search-tile-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* --- Styles for Tags --- */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem; /* Space above the tags */
+}
+
 .tag {
   display: inline-block;
   background-color: #eee;
@@ -206,13 +232,10 @@ footer {
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
 }
-
 .tag:hover {
   background-color: #ff3c00;
   color: #fff;
 }
-
-/* Style for the highlighted tag in H1 on tag pages */
 .tag-highlight {
   color: #ff3c00;
   background-color: #fff2cc;
@@ -220,49 +243,25 @@ footer {
   border-radius: 8px;
 }
 
-@media (max-width: 600px) {
-  main {
-    padding: 1rem;
-  }
-  nav ul {
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-  header {
-    padding: 1rem 0 0.5rem 0;
-  }
-  .search-tile {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .search-tile-link {
-    flex-direction: column;
-    width: 100%;
-  }
-  .search-tile-img-wrap {
-    width: 100%;
-    height: 160px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .search-tile-img {
-    max-width: 160px;
-    max-height: 150px;
-  }
-  .search-tile-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0.7rem;
-    box-sizing: border-box;
-  }
-  #logo-img {
-    content: url('/public/logo-tiny.png');
-    width: 48px;
-    height: 48px;
-  }
+/* Meta header for individual post pages */
+.post-meta-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
 }
+.post-meta-header .post-date {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
+}
+
+
+/* --- RESPONSIVE STYLES --- */
+
 @media (max-width: 900px) {
   .header-row {
     flex-direction: column;
@@ -273,9 +272,39 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
 
+/* Styles for narrow screens (e.g., mobile) */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  nav ul {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  header {
+    padding: 1rem 0.5rem;
+  }
+  #logo-img {
+    content: url('/public/logo-tiny.png');
+    width: 48px;
+    height: 48px;
   }
   .post-title {
     font-size: 1.5rem;
+  }
+  
+  /* Switch to vertical layout on small screens */
+  .search-tile-link {
+    flex-direction: column;
+  }
+  .search-tile-img-wrap {
+    width: 100%; /* Image container takes full width */
+    height: 220px;
+  }
+  .search-tile-content {
+    padding: 1rem;
   }
 }
