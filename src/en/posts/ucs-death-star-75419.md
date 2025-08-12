@@ -7,7 +7,7 @@ tags: [post, news, LEGO, Star Wars, UCS, 75419, Death Star]
 language: en
 ---
 
-## The LEGO community is in an uproar. Leaked images of the upcoming Ultimate Collector Series (UCS) Death Star, set number 75419, have sent shockwaves through the fan base, igniting a fierce debate that’s as explosive as the space station itself. With a jaw-dropping price tag of $999.99 and a massive 9,023 piece count, this isn't just a new set—it's a statement. But is it a statement of brilliant design or baffling corporate greed?
+**The LEGO community is in an uproar. Leaked images of the upcoming Ultimate Collector Series (UCS) Death Star, set number 75419, have sent shockwaves through the fan base, igniting a fierce debate that’s as explosive as the space station itself. With a jaw-dropping price tag of $999.99 and a massive 9,023 piece count, this isn't just a new set—it's a statement. But is it a statement of brilliant design or baffling corporate greed?**
 
 For years, fans have speculated about a new UCS Death Star, a successor to the beloved, spherical playsets of the past. What LEGO has delivered is something no one quite expected: a gigantic, circular cross-section. A "deep-dish pizza" or "pancake" of the Empire's ultimate weapon, as many on social media have dubbed it. This radical design choice, coupled with its unprecedented price, has cleaved the community in two. Let's dive into the controversy and try to answer the thousand-dollar question: is it worth it?
 

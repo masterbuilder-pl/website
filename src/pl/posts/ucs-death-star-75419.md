@@ -7,7 +7,7 @@ tags: [post, news, LEGO, Star Wars, UCS, 75419, Gwiazda Śmierci]
 language: pl
 ---
 
-## Społeczność LEGO jest w rozsypce. Zdjęcia z przecieków nadchodzącej Gwiazdy Śmierci z serii Ultimate Collector Series (UCS), o numerze katalogowym 75419, wstrząsnęły fanami, wywołując zażartą debatę, która jest równie wybuchowa co sama stacja kosmiczna. Z oszałamiającą ceną 999,99 dolarów i ogromną liczbą 9023 elementów, to nie jest tylko nowy zestaw – to manifest. Ale czy jest to manifest genialnego projektu, czy może zdumiewającej korporacyjnej chciwości?
+**Społeczność LEGO jest w rozsypce. Zdjęcia z przecieków nadchodzącej Gwiazdy Śmierci z serii Ultimate Collector Series (UCS), o numerze katalogowym 75419, wstrząsnęły fanami, wywołując zażartą debatę, która jest równie wybuchowa co sama stacja kosmiczna. Z oszałamiającą ceną 999,99 dolarów i ogromną liczbą 9023 elementów, to nie jest tylko nowy zestaw – to manifest. Ale czy jest to manifest genialnego projektu, czy może zdumiewającej korporacyjnej chciwości?**
 
 Przez lata fani spekulowali na temat nowej Gwiazdy Śmierci UCS, następcy uwielbianych, sferycznych zestawów z przeszłości. To, co LEGO dostarczyło, jest czymś, czego nikt się nie spodziewał: gigantycznym, okrągłym przekrojem. "Pizza na grubym cieście" lub "naleśnik" ostatecznej broni Imperium, jak wielu nazwało go w mediach społecznościowych. Ta radykalna decyzja projektowa, w połączeniu z bezprecedensową ceną, podzieliła społeczność na dwie części. Zanurzmy się w kontrowersje i spróbujmy odpowiedzieć na pytanie za tysiąc dolarów: czy warto?
 
