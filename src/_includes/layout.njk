@@ -1,7 +1,8 @@
 {% extends "base.njk" %}
 {% block content %}
   <h1 class="post-title">{{ title }}</h1>
-
+  
+  {% if tags and 'post' in tags %}
   <div class="post-meta-header">
     <span class="post-date">{{ page.date | readableDate(language) }}</span>
     {% if tags %}
@@ -14,7 +15,8 @@
       </div>
     {% endif %}
   </div>
-
+  {% endif %}
+  
   {% if image %}
     <img src="{{ image }}" alt="{{ title }}" class="post-main-image" />
   {% endif %}

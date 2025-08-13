@@ -3,7 +3,7 @@ title: The $1,000 LEGO Death Star - Galactic Triumph or Financial Black Hole?
 date: 2025-08-12
 layout: layout.njk
 image: /public/ucs-death-star-75419/75419-ucs-death-star-1.webp
-tags: [post, news, LEGO, Star Wars, UCS, 75419, Death Star]
+tags: [post, news, Star Wars]
 language: en
 ---
 
