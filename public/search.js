@@ -47,6 +47,7 @@ fetch('/search-index.json')
             </div>
           `;
           output.appendChild(div);
+          output.appendChild(document.createElement("p"));
         }
       });
     }
