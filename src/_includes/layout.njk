@@ -2,10 +2,11 @@
 {% block content %}
   <h1 class="post-title">{{ title }}</h1>
   
-  {% if tags and 'post' in tags %}
   <div class="post-meta-header">
-    <span class="post-date">{{ page.date | readableDate(language) }}</span>
     {% if tags %}
+      {% if page.date %}
+        <span class="post-date">{{ page.date | readableDate(language) }}</span>
+      {% endif %}
       <div class="tags-container">
         {% for tag in tags %}
           {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
@@ -15,7 +16,6 @@
       </div>
     {% endif %}
   </div>
-  {% endif %}
   
   {% if image %}
     <img src="{{ image }}" alt="{{ title }}" class="post-main-image" />

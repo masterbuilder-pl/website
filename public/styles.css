@@ -255,7 +255,6 @@ footer {
 
 /* Meta header for individual post pages */
 .post-meta-header {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
