@@ -25,7 +25,7 @@ For a vast portion of the fanbase, however, the design is a profound disappointm
 
 ### The Thousand-Dollar Question: Price vs. Value
 
-Let's address the Womp Rat in the room: the price. At $999.99, this is a new threshold for a LEGO set, and many find it hard to swallow.
+Let's address the price. At $999.99, this is a new threshold for a LEGO set, and many find it hard to swallow.
 
 The Reddit thread is filled with comments like "$1000 is still total wank" and "I can't imagine anyone anywhere will agree that it's worth it at that price." Critics argue that it simply doesn't look like a thousand-dollar set, with some suggesting a price tag of $500-$600 would have been more appropriate. The frustration is palpable, with many feeling LEGO is getting greedier.
 

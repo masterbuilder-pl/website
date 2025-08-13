@@ -26,7 +26,7 @@ Dla ogromnej części fanów projekt jest jednak głębokim rozczarowaniem. Nast
 
 ### Kwestia Tysiąca Dolarów: Cena kontra Wartość
 
-Zajmijmy się szczurem Womp w pokoju: ceną. Z kwotą 999,99 dolarów, jest to nowy próg dla zestawu LEGO, który dla wielu jest trudny do przełknięcia.
+Zajmijmy się ceną. Z kwotą 999,99 dolarów, jest to nowy próg dla zestawu LEGO, który dla wielu jest trudny do przełknięcia.
 
 Wątek na Reddicie jest pełen komentarzy w stylu "$1000 to wciąż totalne przegięcie" i "Nie wyobrażam sobie, żeby ktokolwiek gdziekolwiek zgodził się, że jest to warte tej ceny." Krytycy twierdzą, że po prostu nie wygląda to na zestaw za tysiąc dolarów, a niektórzy sugerują, że cena w przedziale 500-600 dolarów byłaby bardziej odpowiednia. Frustracja jest wyczuwalna, a wielu uważa, że LEGO staje się coraz bardziej chciwe.
 
