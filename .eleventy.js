@@ -68,8 +68,26 @@ module.exports = function (eleventyConfig) {
   });
   
   // Format date for display
+  const polishGenitiveMonths = [
+    "stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+    "lipca", "sierpnia", "września", "października", "listopada", "grudnia"
+  ];
+
+  // Helper to get genitive month for Polish
+  function getPolishGenitiveMonth(monthIndex) {
+    return polishGenitiveMonths[monthIndex - 1];
+  }
+
   eleventyConfig.addFilter("readableDate", (dateObj, lang = "en") => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).setLocale(lang).toFormat("dd LLLL yyyy");
+    const dt = DateTime.fromJSDate(dateObj, { zone: 'utc' });
+    if (lang === "pl") {
+      // Use genitive month for Polish
+      const day = dt.day;
+      const month = getPolishGenitiveMonth(dt.month);
+      const year = dt.year;
+      return `${day} ${month} ${year}`;
+    }
+    return dt.setLocale(lang).toFormat("dd LLLL yyyy");
   });
 
   return {
