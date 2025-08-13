@@ -2,31 +2,32 @@
   <div class="search-results">
     {% for post in posts %}
       <div class="search-tile">
-        <a href="{{ post.url }}" class="search-tile-link">
+        {# The image is now wrapped in its own link to the post #}
+        <a href="{{ post.url }}" class="search-tile-img-link" aria-label="Read more about {{ post.data.title }}">
           <div class="search-tile-img-wrap">
             <img src="{{ post.data.image or '/favicon.png' }}" alt="{{ post.data.title }}" class="search-tile-img" />
           </div>
-          <div class="search-tile-content">
-            {# This div groups the main content, allowing tags to be pushed down #}
-            <div class="search-tile-main">
-              <h3>{{ post.data.title }}</h3>
-              <div class="post-meta">
-                <span class="post-date">{{ post.date | readableDate(post.data.language) }}</span>
-              </div>
-              <p>{{ post.templateContent | striptags | truncate(120, true, '...') }}</p>
-            </div>
-            {# Tags are now outside the main content block for better layout control #}
-            {% if post.data.tags %}
-              <div class="tags-container">
-                {% for tag in post.data.tags %}
-                  {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
-                    <a href="/{{ post.data.language }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
-                  {% endif %}
-                {% endfor %}
-              </div>
-            {% endif %}
-          </div>
         </a>
+        <div class="search-tile-content">
+          <div class="search-tile-main">
+            {# The title is now the main link that we will "stretch" with CSS #}
+            <h3>
+              <a href="{{ post.url }}" class="stretched-link-target">{{ post.data.title }}</a>
+            </h3>
+            <div class="post-meta">
+              <span class="post-date">{{ post.date | readableDate(post.data.language) }}</span>
+            </div>
+            <p>{{ post.templateContent | striptags | truncate(120, true, '...') }}</p>
+          </div>
+          {# The tags container is now a sibling, not a child of a link, which is valid #}
+          <div class="tags-container">
+            {% for tag in post.data.tags %}
+              {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
+                <a href="/{{ post.data.language }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
     {% endfor %}
   </div>
