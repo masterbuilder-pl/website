@@ -2,7 +2,7 @@
 title: Mini base
 date: 2025-07-23
 layout: layout.njk
-tags: [moc]
+tags: [moc, Star Wars]
 image: /public/minibase/minibase.png
 instruction: /public/minibase/minibase_instrukcja.pdf
 language: en

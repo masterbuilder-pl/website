@@ -2,7 +2,7 @@
 title: Betreyal in the senate
 date: 2025-07-19
 layout: layout.njk
-tags: [moc]
+tags: [moc, Star Wars]
 image: /public/palpatin/palpatin.png
 instruction: /public/palpatin/palpatin_instrukcja.pdf
 language: en

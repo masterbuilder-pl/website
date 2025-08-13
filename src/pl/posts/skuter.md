@@ -2,7 +2,7 @@
 title: Hyperlash
 date: 2025-07-20
 layout: layout.njk
-tags: [moc]
+tags: [moc, Star Wars]
 image: /public/skuter/skuter.png
 instruction: /public/skuter/skuter_instrukcja.pdf
 language: pl

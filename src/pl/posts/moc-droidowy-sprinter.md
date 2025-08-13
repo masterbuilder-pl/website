@@ -2,7 +2,7 @@
 title: Droidowy Sprinter
 date: 2025-07-18
 layout: layout.njk
-tags: [moc]
+tags: [moc, Star Wars]
 image: /public/droid-sprinter/image-1.png
 language: pl
 ---

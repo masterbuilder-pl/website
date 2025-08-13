@@ -6,14 +6,14 @@ pagination:
 permalink: "/{{ item.lang }}/tags/{{ item.tag | slugify }}/"
 layout: layout.njk
 eleventyExcludeFromCollections: true
+eleventyComputed:
+  language: "{{ item.lang }}"
+  title: "{{ translations[item.lang].tagged_posts }} '{{ item.tag }}'"
 ---
-{# Set the language based on the paginated item #}
-{% set language = item.lang %}
-{# Filter posts for the specific tag and language #}
-{% set postsForTag = collections.posts | selectLang(language) | selectTag(item.tag) %}
+{# The H1 is now handled by the layout.njk using the dynamic title above. #}
+{# We just need to find the right posts and pass them to the tile macro. #}
 
-<h1>{{ translations[language].tagged_posts }} <span class="tag-highlight">{{ item.tag }}</span></h1>
+{% set postsForTag = collections.posts | selectLang(item.lang) | selectTag(item.tag) %}
 
-{# This import path is now correct for a file in the src/ directory #}
 {% import "./_includes/post-tiles.njk" as pt %}
 {{ pt.post_tiles(postsForTag) }}
