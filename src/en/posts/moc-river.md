@@ -4,6 +4,7 @@ date: 2025-07-17
 layout: layout.njk
 tags: [moc, Star Wars]
 image: /public/river/image-1.jpg
+description: "Three clone troopers make their way through a murky river, fleeing from advancing Separatist forces. MOC with free instructions from the Star Wars universe."
 instruction: /public/river/instruction.pdf
 ---
 
