@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title or "MasterBuilder.pl" }}</title>
+  
+  {# --- ADD THIS ENTIRE SEO BLOCK --- #}
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="{{ description or content | striptags | truncate(155) }}">
+
+  <!-- Open Graph Meta Tags (for social media previews) -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or content | striptags | truncate(155) }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {# The image URL must be absolute for social media crawlers to find it #}
+  <meta property="og:image" content="{{ site.url }}{{ image or '/public/logo.png' }}">
+  <meta property="og:site_name" content="MasterBuilder.pl">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or content | striptags | truncate(155) }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ image or '/public/logo.png' }}">
+  {# --- END OF SEO BLOCK --- #}
+
   <link rel="stylesheet" href="/public/styles.css">
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>

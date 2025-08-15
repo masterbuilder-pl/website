@@ -2,7 +2,10 @@
 title: MOCs
 layout: layout.njk
 language: en
+description: "My own MOCs with free instructions mainly from the Star Wars universe"
 ---
+
+<p>This is a collection of my own MOCs, which stands for "My Own Creation." Each one is a unique piece that combines my passion for building with LEGO bricks and my love for the Star Wars universe. Each MOC comes with a free instruction manual that allows for its recreation.</p>
 
 {% import "../_includes/post-tiles.njk" as pt %}
 {{ pt.post_tiles(collections.posts | sortByDate | selectLang('en') | selectTag('moc')) }}
