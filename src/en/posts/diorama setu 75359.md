@@ -13,6 +13,7 @@ This unique diorama was designed with the LEGO Star Wars 75359 – Battle Pack: 
 <img src="/public/diorama75359/river-2.jpg" alt="diorama75359" class="post-image" />
 
 The scene depicts a fragment of a planet with a water element – a realistic terrain built from sandy bricks, enriched with rock formations, lush vegetation, and a clear stream.
+### The photos show classic Phase I clones, due to the unavailability of 332nd Legion soldiers at Bricklink Studio.”
 
 <img src="/public/diorama75359/river-1.jpg" alt="diorama75359" class="post-image" />
 
