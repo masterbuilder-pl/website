@@ -8,7 +8,6 @@ instruction: /public/holotable/holotable.pdf
 language: pl
 ---
 
-Description:
 This small yet striking model depicts a futuristic holographic table inspired by the Star Wars universe. Set on an elegant grey-toned base, it features a control console projecting holograms in a signature blue glow.
 
 <img src="/public/holotable/holotable.jpg" alt="holotable" class="post-image" />
