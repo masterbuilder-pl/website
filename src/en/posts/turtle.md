@@ -8,7 +8,9 @@ instruction: /public/turtle/turtle.pdf
 language: en
 ---
 
-Working on description
+🌊🐢 Here’s my LEGO sea turtle!
+It swiftly travels across the oceans of imagination, flapping its green flippers like turbo engines. 🚀
+Rumor has it, it once even outran a dolphin… but it doesn’t like to brag! 😉
 
 <img src="/public/turtle/turtle.jpg" alt="turtle" class="post-image" />
 
