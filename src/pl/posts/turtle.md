@@ -8,7 +8,9 @@ instruction: /public/turtle/turtle.pdf
 language: pl
 ---
 
-Pracujemy nad opisem 
+🌊🐢 Oto mój żółw morski z LEGO!
+Błyskawicznie przemierza oceany wyobraźni, machając swoimi zielonymi płetwami niczym turbiny. 🚀
+Podobno raz wyprzedził nawet delfina… 🐬 ale nie chce się tym chwalić!😉
 
 <img src="/public/turtle/turtle.jpg" alt="turtle" class="post-image" />
 
