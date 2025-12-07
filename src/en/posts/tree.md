@@ -2,7 +2,7 @@
 title: Cat Hideout – Little Forest Tree
 date: 2025-08-23
 layout: layout.njk
-tags: [moc, cat, tree,]
+tags: [moc, cat, tree]
 image: /public/tree/tree.png
 instruction: /public/tree/tree.pdf
 language: en

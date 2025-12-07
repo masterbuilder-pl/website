@@ -2,7 +2,7 @@
 title: Diorama for set 75359
 date: 2025-08-31
 layout: layout.njk
-tags: [moc, Star Wars, clones, ]
+tags: [moc, Star Wars, clones]
 image: /public/diorama75359/diorama75359.png
 instruction: /public/diorama75359/diorama75359.pdf
 language: en

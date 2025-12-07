@@ -2,7 +2,7 @@
 title: Duel on Mustafar
 date: 2025-09-06
 layout: layout.njk
-tags: [moc, Star Wars, Mustafar,]
+tags: [moc, Star Wars, Mustafar]
 image: /public/mustafar/mustafar-2.jpg
 instruction: /public/mustafar/mustafar.pdf
 language: en
