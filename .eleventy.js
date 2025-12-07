@@ -14,7 +14,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("selectTag", function (arr, tag) {
     if (!Array.isArray(arr)) return [];
     if (!tag) return arr;
-    return arr.filter(item => item.data.tags && item.data.tags.includes(tag));
+    // Case-insensitive tag matching
+    const normalizedTag = tag.toLowerCase();
+    return arr.filter(item => {
+      if (!item.data.tags) return false;
+      return item.data.tags.some(t => t.toLowerCase() === normalizedTag);
+    });
   });
   eleventyConfig.addFilter("sortByDate", function (arr) {
     if (!Array.isArray(arr)) return [];
@@ -39,30 +44,64 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addCollection("tagList", (collectionApi) => {
     const tagsByLang = {};
-    // Go through each post
-    collectionApi.getFilteredByTag("post").forEach(item => {
-        const lang = item.data.language;
-        if (item.data.tags) {
-            // Create a Set for each language if it doesn't exist
-            if (!tagsByLang[lang]) {
-                tagsByLang[lang] = new Set();
-            }
-            // Add tags to the correct language set
-            item.data.tags.forEach(tag => {
-                // Exclude tags used for primary navigation
-                if (tag !== 'post' && tag !== 'news' && tag !== 'moc') {
-                    tagsByLang[lang].add(tag);
-                }
-            });
+    const languages = ["pl", "en"];
+    // Map to track normalized tag -> original tag mapping to preserve case for display
+    const tagNormalization = {};
+    
+    // Go through each post from both languages - same approach as posts collection
+    languages.forEach(lang => {
+      const posts = collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`);
+      posts.forEach(item => {
+        // Ensure language is set
+        if (!item.data.language) {
+          item.data.language = lang;
         }
+        const itemLang = item.data.language;
+        
+        if (item.data.tags) {
+          // Create a Set for each language if it doesn't exist
+          if (!tagsByLang[itemLang]) {
+            tagsByLang[itemLang] = new Set();
+          }
+          // Add tags to the correct language set
+          item.data.tags.forEach(tag => {
+            // Exclude tags used for primary navigation
+            if (tag !== 'post' && tag !== 'news' && tag !== 'moc') {
+              // Normalize tag to lowercase for deduplication
+              const normalizedTag = tag.toLowerCase();
+              const key = `${itemLang}:${normalizedTag}`;
+              
+              // Store canonical tag (prefer title case version)
+              if (!tagNormalization[key]) {
+                // Default to title case (capitalize first letter of each word)
+                tagNormalization[key] = normalizedTag.split(' ').map(word => 
+                  word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                ).join(' ');
+              }
+              // If we see a version with proper title case (first letter of each word is uppercase), prefer it
+              const words = tag.split(' ');
+              if (words.some(word => word.length > 0 && word[0] === word[0].toUpperCase() && word.slice(1) === word.slice(1).toLowerCase())) {
+                tagNormalization[key] = tag;
+              }
+              
+              tagsByLang[itemLang].add(normalizedTag);
+            }
+          });
+        }
+      });
     });
 
     // Create a flat list of objects like { tag: "lego", lang: "en" }
+    // Use normalized tag to avoid duplicate permalinks, but store original for display
     const tagList = [];
     for (const lang in tagsByLang) {
-        tagsByLang[lang].forEach(tag => {
-            tagList.push({ tag, lang });
-        });
+      tagsByLang[lang].forEach(normalizedTag => {
+        const key = `${lang}:${normalizedTag}`;
+        // Use the original tag name (preserving case) for display in the tagList
+        // The permalink will use slugify which handles case-insensitive matching
+        const displayTag = tagNormalization[key] || normalizedTag;
+        tagList.push({ tag: displayTag, lang });
+      });
     }
     return tagList;
   });
