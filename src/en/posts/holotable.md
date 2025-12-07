@@ -2,7 +2,7 @@
 title: Holotable
 date: 2025-09-07
 layout: layout.njk
-tags: [moc, Star Wars,]
+tags: [moc, Star Wars]
 image: /public/holotable/holotable2.jpg
 instruction: /public/holotable/holotable.pdf
 language: pl
