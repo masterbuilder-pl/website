@@ -10,7 +10,7 @@ language: pl
 ## Prezentuję wam mój jak dotąd największy model z klocków LEGO – ratusz w Gliwicach. 
 
 
-<img src="/public/ratusz/image16.jpeg" alt="'ratusz'" class="post-image" />
+<img src="/public/ratusz/image16.jpg" alt="'ratusz'" class="post-image" />
 
 Pomysł narodził się na początku września. Kiedy przechodziłem przez rynek, pomyślałem: „A może by tak zbudować go z klocków?”. Po powrocie do domu od razu usiadłem do komputera, uruchomiłem Bricklink Studio i zabrałem się za projektowanie. Jednym z największych wyzwań były proporcje. Nie mogłem budować „na oko” — tutaj jeden klocek za dużo, tam dwa za mało, jedno okno mniejsze, drugie większe. Musiałem określić odpowiednią skalę. 
 ### Pierwsza myśl — skala minifigurek.
@@ -20,7 +20,7 @@ Pomysł narodził się na początku września. Kiedy przechodziłem przez rynek,
 
 Postanowiłem przejść do realizacji. Wyciągnąłem klocki i na płytce 48x48 rozpocząłem budowę. Niestety, szybko musiałem ją przerwać, bo nie miałem potrzebnych mi klocków w takich ilościach. Model nie wykorzystuje wielu rodzajów elementów, ale za to ogromne ilości tych samych. Nawet gdy kupowałem kilkaset identycznych klocków, okazywało się, że to wciąż za mało. Jednak po zrealizowaniu kilku zamówień mogłem kontynuować moją pracę.
 
-<img src="/public/ratusz/image15.jpg" alt="'ratusz'" class="post-image" />
+<img src="/public/ratusz/image150.jpg" alt="'ratusz'" class="post-image" />
 
 Mniej więcej w połowie października przystąpiłem do budowy pierwszego i drugiego piętra. Tutaj również konieczne było domawianie elementów — przykładowo szarych tile’i 2x3 użyłem aż 72 sztuki, mimo że te kondygnacje ratusza są w większości białe. Ale to jeszcze nic — samych okien zamówiłem 350, tyle samo kratek. 
 ### Za same okna zapłaciłem około 200 zł. 
@@ -39,7 +39,7 @@ Najlepszym przykładem są zegary. Co prawda istnieją jako klocki z nadrukami l
 
 Mimo to cała budowla nadal wyglądała dość ponuro. Wróciłem więc do zdjęć prawdziwego ratusza i dodałem trochę kwiatów. To pomogło, ale wciąż brakowało jej życia i charakteru.
 ### Dlatego postanowiłem dodać coś nietypowego.
-<img src="/public/ratusz/image14.jpg" alt="'ratusz'" class="post-image" />
+<img src="/public/ratusz/image140.jpg" alt="'ratusz'" class="post-image" />
 
  Na dachu ustawiłem Świętego Mikołaja w saniach ciągniętych przez renifera oraz Panią Mikołajową, która kurczowo trzyma się płozy. Ten drobny detal dodał historii i skutecznie przełamał monotonię dachu.
 Na sam koniec umieściłem jeszcze sokoła z 24. serii minifigurek LEGO oraz kilka figurek na balkonie. W tym momencie całość zaczęła wyglądać dokładnie tak, jak chciałem — znacznie ciekawiej i bardziej „żywo”.
