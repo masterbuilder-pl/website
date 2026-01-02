@@ -10,7 +10,7 @@ language: pl
 ## Prezentuję wam mój jak dotąd największy model z klocków LEGO – ratusz w Gliwicach. 
 
 
-<img src="/public/ratusz/image16.jpg" alt="'ratusz'" class="post-image" />
+<img src="/public/ratusz/image18.jpg" alt="'ratusz'" class="post-image" />
 
 Pomysł narodził się na początku września. Kiedy przechodziłem przez rynek, pomyślałem: „A może by tak zbudować go z klocków?”. Po powrocie do domu od razu usiadłem do komputera, uruchomiłem Bricklink Studio i zabrałem się za projektowanie. Jednym z największych wyzwań były proporcje. Nie mogłem budować „na oko” — tutaj jeden klocek za dużo, tam dwa za mało, jedno okno mniejsze, drugie większe. Musiałem określić odpowiednią skalę. 
 ### Pierwsza myśl — skala minifigurek.
