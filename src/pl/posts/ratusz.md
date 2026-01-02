@@ -37,6 +37,8 @@ Najlepszym przykładem są zegary. Co prawda istnieją jako klocki z nadrukami l
 
  <img src="/public/ratusz/naklejki.jpg" alt="'naklejki'" class="post-image" />
 
+ <img src="/public/ratusz/image17.jpg" alt="'naklejki'" class="post-image" /> 
+
 Mimo to cała budowla nadal wyglądała dość ponuro. Wróciłem więc do zdjęć prawdziwego ratusza i dodałem trochę kwiatów. To pomogło, ale wciąż brakowało jej życia i charakteru.
 ### Dlatego postanowiłem dodać coś nietypowego.
 <img src="/public/ratusz/image140.jpg" alt="'ratusz'" class="post-image" />
