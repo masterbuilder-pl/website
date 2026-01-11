@@ -1,5 +1,5 @@
 ---
-title: LEGO Dioramy - Podwodna Opowieść – Part 1
+title: LEGO Dioramas - Underwater andventure
 date: 2026-01-06
 layout: layout.njk
 tags: [moc]
@@ -10,10 +10,10 @@ instruction: /public/fiszi/fiszi.pdf
 
 
 
-Rozpoczynam serię moich mini dioram LEGO z kolekcjonerskimi figurkami z 28. serii zwierzątek! W tej pierwszej scenie przenosimy się na piaszczyste dno oceanu, gdzie figurka w przebraniu ryby pływa wśród wodorostów, a jej towarzyszami są wesoły krab i druga rybka. Każdy element został starannie ułożony, by oddać klimat podwodnego świata i zachęcić do kreatywnej zabawy.
+I’m starting a series of my LEGO mini dioramas featuring collectible minifigures from Animal Series 28.
+In this first scene, we dive down to the sandy ocean floor, where a minifigure dressed as a fish swims among seaweed, joined by a cheerful crab and another small fish. Every element has been carefully placed to capture the atmosphere of the underwater world and inspire creative play.
 
 <img src="/public/fiszi/fiszi6.jpg" alt="fiszi" class="post-image" />
 
-
-To dopiero początek – każda kolejna diorama pokaże nową figurkę i jej wyjątkowe środowisko! Co o tym sądzicie? Dla której figurki mam zrobić kolejną?
+This is just the beginning — each new diorama will showcase a different minifigure and its unique environment. What do you think? Which minifigure should I build next?
 
