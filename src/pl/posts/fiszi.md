@@ -1,5 +1,5 @@
 ---
-title: LEGO Dioramy - Podwodna Opowieść – Part 1
+title: LEGO Seria 28 - Ryba – Część 1/12
 date: 2026-01-06
 layout: layout.njk
 tags: [moc]
@@ -8,6 +8,7 @@ description:
 instruction: /public/fiszi/fiszi.pdf
 language: pl
 ---
+
 
 
 
