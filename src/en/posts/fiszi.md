@@ -1,11 +1,12 @@
 ---
-title: LEGO Dioramas - Underwater andventure
+title: LEGO Series 28 - Fish - Part 1/12
 date: 2026-01-06
 layout: layout.njk
 tags: [moc]
 image: /public/fiszi/fiszi5.jpg
 description: 
 instruction: /public/fiszi/fiszi.pdf
+language: en
 ---
 
 

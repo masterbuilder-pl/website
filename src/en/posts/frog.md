@@ -1,5 +1,5 @@
 ---
-title: LEGO Dioramas – Swamp Adventure – Part 2
+title: LEGO Series 28 – Frog – Part 2/12
 date: 2026-01-11
 layout: layout.njk
 tags: [moc]
