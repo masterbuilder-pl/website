@@ -6,6 +6,7 @@ tags: [moc]
 image: /public/fiszi/fiszi5.jpg
 description: 
 instruction: /public/fiszi/fiszi.pdf
+language: pl
 ---
 
 
@@ -16,3 +17,4 @@ Rozpoczynam serię moich mini dioram LEGO z kolekcjonerskimi figurkami z 28. ser
 
 
 To dopiero początek – każda kolejna diorama pokaże nową figurkę i jej wyjątkowe środowisko! Co o tym sądzicie? Dla której figurki mam zrobić kolejną?
+
