@@ -10,5 +10,11 @@ language: pl
 ---
 
 Kontynuuję serię moich mini dioram LEGO z kolekcjonerskimi figurkami z 28. serii zwierzątek! 🌊
+
+Zapraszam do mojego filmiku na [YouTube](https://www.youtube.com/shorts/kjBitoP0JZg).
+
+
 W tej scenie widzimy niewielką, piaszczystą wysepkę, na której figurka w przebraniu krokodyla spędza czas nad wodą. Obok znajduje się gumowa kaczuszka, a w przejrzystej wodzie pływa czerwony homar. Leżak i koło ratunkowe podkreślają wakacyjny, spokojny charakter dioramy, tworząc lekką i zabawną scenkę w miniaturowym świecie LEGO.
+
+
 
