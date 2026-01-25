@@ -5,7 +5,7 @@ layout: layout.njk
 tags: [moc]
 image: /public/crocodile/croco3.jpg
 description: 
-instruction: /public/croco/croco.pdf
+instruction: /public/crocodile/croco.pdf
 language: pl
 ---
 
