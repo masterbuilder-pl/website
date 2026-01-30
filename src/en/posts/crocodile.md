@@ -13,4 +13,4 @@ I continue my series of LEGO mini dioramas featuring collectible minifigures fro
 
 I invite you to my [YouTube](https://www.youtube.com/shorts/kjBitoP0JZg) video.
 
-This scene shows a small sandy islet where a minifigure dressed as a crocodile is spending time by the water. Nearby, there is a rubber duck, and a red lobster swims in the clear water. A deck chair and a life ring highlight the relaxed, holiday atmosphere of the diorama, creating a light and playful scene in the miniature LEGO world.
+This scene shows a small islet where a minifigure dressed as a crocodile is spending time by the water. Nearby, there is a rubber duck, and a red lobster swims in the clear water. A deck chair and a life ring highlight the relaxed, holiday atmosphere of the diorama, creating a light and playful scene in the miniature LEGO world.
