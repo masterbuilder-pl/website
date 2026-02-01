@@ -1,5 +1,5 @@
 ---
-title: LEGO Series 28 – Lion – Part 5/12
+title: LEGO Seria 28 – Lew – Część 5/12
 date: 2026-02-01
 layout: layout.njk
 tags: [moc]
