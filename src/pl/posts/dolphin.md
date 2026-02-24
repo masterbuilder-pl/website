@@ -3,7 +3,7 @@ title: LEGO Seria 28 - Delfin - Część 8/12
 date: 2026-02-24
 layout: layout.njk
 tags: [moc]
-image: /public/dolphin/dolphin1.jpeg
+image: /public/dolphin/dolphin.jpeg
 description: 
 instruction: /public/dolphin/dolphin.pdf
 language: pl

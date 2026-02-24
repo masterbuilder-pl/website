@@ -3,7 +3,7 @@ title: LEGO Series 28 - Dolphin - Part 8/12
 date: 2026-02-24
 layout: layout.njk
 tags: [moc]
-image: /public/dolphin/dolphin1.jpeg
+image: /public/dolphin/dolphin.jpeg
 description: 
 instruction: /public/dolphin/dolphin.pdf
 language: en
