@@ -3,7 +3,7 @@ title: Odyseusz – BrickHeadz z Odysei
 date: 2026-09-01
 layout: layout.njk
 tags: [moc]
-image: /public/odysseus/odysseus_lego2.jpg
+image: /public/odysseus/odysseus_lego3.jpg
 description: 
 language: pl
 ---
