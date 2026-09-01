@@ -16,3 +16,4 @@ Inspiracją do stworzenia tej konstrukcji był film Christophera Nolana „The O
 
 Możesz zakupić instrukcję na [Rebrickable](https://rebrickable.com/mocs/MOC-271346/masterbuilder2222/odysseus-brickheadz-from-the-odyssey/#details).
 
+[Lista elementów](/public/odysseus/odysseuspieces.json)
