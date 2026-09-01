@@ -14,4 +14,4 @@ The idea for this build was inspired by Christopher Nolan’s film The Odyssey. 
 
 You can purchase instructions on [Rebrickable](https://rebrickable.com/mocs/MOC-271346/masterbuilder2222/odysseus-brickheadz-from-the-odyssey/#details).
 
-[Part list](/public/odysseus/odysseuspieces.json)
+<a href="/public/odysseus/odysseuspieces.json" download>Download part list</a>
