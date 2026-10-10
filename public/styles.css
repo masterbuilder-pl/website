@@ -160,12 +160,17 @@ h3 { font-size: clamp(1rem, 2.5vw, 1.3rem); }
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 7px; padding: 0.35rem 0.75rem;
-  text-decoration: none; color: var(--text-dim);
+  color: var(--text-dim);
   flex: 1; max-width: 280px;
   transition: border-color 0.15s;
 }
-.nav-search:hover { border-color: rgba(201,168,76,0.4); }
-.nav-search span { font-size: 0.78rem; white-space: nowrap; overflow: hidden; }
+.nav-search:focus-within { border-color: rgba(201,168,76,0.4); }
+.nav-search input {
+  background: none; border: none; outline: none;
+  color: var(--text); font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem; width: 100%;
+}
+.nav-search input::placeholder { color: var(--text-dim); }
 @media (max-width: 480px) { .nav-search { max-width: 120px; } }
 
 /* ── Footer ── */
