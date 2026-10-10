@@ -1,10 +1,6 @@
 {
   "url": "https://masterbuilder.pl",
-  "languages": ["pl", "en"],
-  "menu": [
-    {"label": {"pl": "Aktualizacje", "en": "News"}, "url": "", "tag": "news"},
-    {"label": {"pl": "MOC-y", "en": "MOCs"}, "url": "mocs/", "tag": "moc"},
-    {"label": {"pl": "O mnie", "en": "About me"}, "url": "about/"}
-    
-  ]
+  "instagram": "https://www.instagram.com/masterbuilder.pl",
+  "facebook": "https://www.facebook.com/pl.masterbuilder",
+  "rebrickable": "https://rebrickable.com/users/masterbuilder2222/mocs/"
 }
