@@ -1,14 +1,7 @@
 {% macro post_tiles(posts) %}
 <div class="masonry">
   {% for post in posts %}
-    {% if loop.index == 1 %}
-      {% set tileClass = "tile tall" %}
-    {% elif loop.index == 4 %}
-      {% set tileClass = "tile wide" %}
-    {% else %}
-      {% set tileClass = "tile" %}
-    {% endif %}
-    <a class="{{ tileClass }}" href="{{ post.url }}">
+    <a class="tile" href="{{ post.url }}">
       {% if post.data.image %}
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
       {% else %}
