@@ -1,31 +1,37 @@
 {% extends "base.njk" %}
 {% block content %}
-  <h1 class="post-title">{{ title }}</h1>
-  
-  <div class="post-meta-header">
-    {% if tags %}
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta-top">
+      {% for tag in tags %}
+        {% if tag != 'post' and tag != 'news' %}
+          <a href="/tags/{{ tag | slugify }}/" class="tag{% if tag == 'star-wars' or tag == 'Star Wars' %} blue{% elif tag != 'moc' %} neutral{% endif %}">{{ tag | upper }}</a>
+        {% endif %}
+      {% endfor %}
       {% if page.date %}
-        <span class="post-date">{{ page.date | readableDate(language) }}</span>
+        <span class="post-date">{{ page.date | readableDate }}</span>
       {% endif %}
-      <div class="tags-container">
-        {% for tag in tags %}
-          {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
-            <a href="/{{ language }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
+    </div>
+    <h1 class="post-title">{{ title }}</h1>
+  </header>
+
+  {% if image %}
+    <div class="post-hero-img-wrap">
+      <img src="{{ image }}" alt="{{ title }}" class="post-hero-img">
+    </div>
+  {% endif %}
+
+  <div class="post-actions">
+    {% if instruction %}
+      <a class="btn-primary" href="{{ instruction }}" target="_blank" rel="noopener">Get free instructions</a>
+    {% endif %}
+    {% if rebrickable %}
+      <a class="btn-rebrickable" href="{{ rebrickable }}" target="_blank" rel="noopener">Buy on Rebrickable</a>
     {% endif %}
   </div>
-  
-  {% if image %}
-    <img src="{{ image }}" alt="{{ title }}" class="post-main-image" />
-  {% endif %}
-  {% if instruction %}
-    <button class="instruction-button" onclick="window.open('{{ instruction }}', '_blank')">
-      {{ translations[language].button }}
-    </button>
-  {% endif %}
+
   <div class="post-content">
     {{ content | safe }}
   </div>
+</article>
 {% endblock %}

@@ -1,0 +1,34 @@
+---
+title: MasterBuilder.pl — LEGO MOC Builds & Instructions
+layout: base.njk
+description: "Handcrafted LEGO builds by MasterBuilder — original MOCs with free and paid instructions."
+---
+
+{% block content %}
+<section class="hero">
+  <div class="hero-left">
+    <p class="kicker">My Own Creations &middot; Adult LEGO Builder</p>
+    <h1 class="hero-h1">PASSION.<br><span class="accent">DETAILS.</span><br>BRICKS.</h1>
+    <p class="hero-sub">Handcrafted LEGO builds — from Star Wars dioramas to medieval castles. Every MOC comes with free or paid instructions.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="#builds">Browse MOCs</a>
+      <a class="btn-ghost" href="https://www.buymeacoffee.com/masterbuilder" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="rebrickable-badge">
+      <span class="rb-label">Instructions on</span>
+      <span class="rb-count">9+</span>
+      <span class="rb-sub">Rebrickable</span>
+      <a class="btn-primary rb-btn" href="{{ site.rebrickable }}" target="_blank" rel="noopener">Shop instructions →</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-head" id="builds">
+  <h2>Latest Builds</h2>
+</div>
+
+{% import "./_includes/post-tiles.njk" as pt %}
+{{ pt.post_tiles(collections.posts) }}
+{% endblock %}
