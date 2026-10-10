@@ -3,17 +3,13 @@ pagination:
   data: collections.tagList
   size: 1
   alias: item
-permalink: "/{{ item.lang }}/tags/{{ item.tag | slugify }}/"
+permalink: "/tags/{{ item.slug }}/"
 layout: layout.njk
 eleventyExcludeFromCollections: true
 eleventyComputed:
-  language: "{{ item.lang }}"
-  title: "{{ translations[item.lang].tagged_posts }} '{{ item.tag }}'"
+  title: "Posts tagged '{{ item.tag }}'"
 ---
-{# The H1 is now handled by the layout.njk using the dynamic title above. #}
-{# We just need to find the right posts and pass them to the tile macro. #}
 
-{% set postsForTag = collections.posts | selectLang(item.lang) | selectTag(item.tag) %}
-
+{% set postsForTag = collections.posts | selectTag(item.tag) %}
 {% import "./_includes/post-tiles.njk" as pt %}
 {{ pt.post_tiles(postsForTag) }}
