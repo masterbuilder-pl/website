@@ -49,7 +49,7 @@
   </a>
 </nav>
 
-{% block content %}{% endblock %}
+{% block content %}{{ content | safe }}{% endblock %}
 
 <div class="support-strip">
   <div class="support-left">
