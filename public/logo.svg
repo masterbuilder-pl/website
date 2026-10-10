@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2620"/>
+      <stop offset="100%" stop-color="#13110a"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e8c04a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </radialGradient>
+    <radialGradient id="hatGrad" cx="40%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ddb84e"/>
+      <stop offset="100%" stop-color="#a07828"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="#c9a84c" stroke-width="1.5"/>
+  <!-- Inner ring accent -->
+  <circle cx="50" cy="50" r="43" fill="none" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+
+  <!-- Neck -->
+  <rect x="39" y="72" width="22" height="8" rx="3" fill="#c9a84c"/>
+  <rect x="41" y="72" width="18" height="2" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Head -->
+  <rect x="33" y="46" width="34" height="28" rx="5" fill="url(#faceGrad)"/>
+  <!-- Head shading -->
+  <rect x="33" y="46" width="34" height="6" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="33" y="68" width="34" height="6" rx="0 0 5 5" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Hat brim -->
+  <ellipse cx="50" cy="47" rx="23" ry="4.5" fill="url(#hatGrad)"/>
+  <ellipse cx="50" cy="47" rx="23" ry="4.5" fill="none" stroke="#8a6e2a" stroke-width="0.5"/>
+
+  <!-- Hat dome -->
+  <path d="M32 47 C32 35 38 26 50 25 C62 26 68 35 68 47" fill="url(#hatGrad)"/>
+  <path d="M32 47 C32 35 38 26 50 25 C62 26 68 35 68 47" fill="none" stroke="#8a6e2a" stroke-width="0.5"/>
+  <!-- Hat highlight -->
+  <path d="M40 36 C42 30 50 27 56 29" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Eyebrows -->
+  <path d="M39 55 Q42 53 45 54.5" fill="none" stroke="#13110a" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M55 54.5 Q58 53 61 55" fill="none" stroke="#13110a" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <circle cx="43" cy="58" r="3.5" fill="#13110a"/>
+  <circle cx="57" cy="58" r="3.5" fill="#13110a"/>
+  <circle cx="44.2" cy="56.8" r="1" fill="white"/>
+  <circle cx="58.2" cy="56.8" r="1" fill="white"/>
+
+  <!-- Smile -->
+  <path d="M43 65 Q50 70 57 65" fill="none" stroke="#13110a" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Teeth hint -->
+  <path d="M45 66.5 Q50 69 55 66.5" fill="white" opacity="0.6"/>
+
+  <!-- Gold dot accents on ring -->
+  <circle cx="50" cy="3.5" r="1.2" fill="#c9a84c" opacity="0.6"/>
+  <circle cx="50" cy="96.5" r="1.2" fill="#c9a84c" opacity="0.6"/>
+  <circle cx="3.5" cy="50" r="1.2" fill="#c9a84c" opacity="0.6"/>
+  <circle cx="96.5" cy="50" r="1.2" fill="#c9a84c" opacity="0.6"/>
+</svg>
