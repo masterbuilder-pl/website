@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#2e2a22"/>
-      <stop offset="100%" stop-color="#13110a"/>
-    </radialGradient>
     <radialGradient id="faceGrad" cx="40%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#f0cc5a"/>
       <stop offset="100%" stop-color="#c9a84c"/>
@@ -13,13 +9,6 @@
       <stop offset="100%" stop-color="#9a7224"/>
     </radialGradient>
   </defs>
-
-  <!-- Background circle -->
-  <circle cx="60" cy="60" r="58" fill="url(#bg)"/>
-  <!-- Gold border ring -->
-  <circle cx="60" cy="60" r="57" fill="none" stroke="#c9a84c" stroke-width="2"/>
-  <!-- Subtle inner ring -->
-  <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(201,168,76,0.18)" stroke-width="0.8"/>
 
   <!-- Neck -->
   <rect x="45" y="88" width="30" height="12" rx="4" fill="#c9a84c"/>
@@ -35,7 +24,6 @@
   <!-- Hat brim -->
   <ellipse cx="60" cy="50" rx="34" ry="6" fill="url(#hatGrad)"/>
   <ellipse cx="60" cy="50" rx="34" ry="6" fill="none" stroke="#7a5c1a" stroke-width="0.8"/>
-  <!-- Brim highlight -->
   <ellipse cx="60" cy="49" rx="28" ry="3" fill="rgba(255,255,255,0.08)"/>
 
   <!-- Hat dome -->
@@ -43,37 +31,26 @@
   <path d="M30 50 C29 34 37 20 60 18 C83 20 91 34 90 50" fill="none" stroke="#7a5c1a" stroke-width="0.8"/>
   <!-- Hat highlight streak -->
   <path d="M42 36 C46 26 58 21 68 24" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- Hat ridge line -->
-  <path d="M60 18 L60 50" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
 
-  <!-- Eyebrows (angled, expressive) -->
+  <!-- Eyebrows -->
   <path d="M36 61 Q41 57.5 46 59.5" fill="none" stroke="#13110a" stroke-width="2.5" stroke-linecap="round"/>
   <path d="M74 59.5 Q79 57.5 84 61" fill="none" stroke="#13110a" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- Eyes -->
   <circle cx="44" cy="67" r="5.5" fill="#13110a"/>
   <circle cx="76" cy="67" r="5.5" fill="#13110a"/>
-  <!-- Eye highlights -->
   <circle cx="46" cy="65" r="1.8" fill="white"/>
   <circle cx="78" cy="65" r="1.8" fill="white"/>
-  <circle cx="45.2" cy="68.5" r="0.8" fill="rgba(255,255,255,0.4)"/>
-  <circle cx="77.2" cy="68.5" r="0.8" fill="rgba(255,255,255,0.4)"/>
 
-  <!-- LEGO smile: wide open grin -->
-  <!-- Outer smile shape (dark fill = open mouth) -->
+  <!-- Smile -->
   <path d="M38 78 Q60 92 82 78 Q75 88 60 90 Q45 88 38 78 Z" fill="#13110a"/>
-  <!-- Upper lip curve -->
   <path d="M38 78 Q60 92 82 78" fill="none" stroke="#13110a" stroke-width="3" stroke-linecap="round"/>
-  <!-- Teeth -->
   <path d="M42 79.5 Q60 91 78 79.5 Q75 86 60 88 Q45 86 42 79.5 Z" fill="white"/>
-  <!-- Teeth dividers -->
   <line x1="60" y1="80" x2="60" y2="87.5" stroke="#e8e0d0" stroke-width="0.8"/>
   <line x1="51" y1="80.5" x2="50.5" y2="87" stroke="#e8e0d0" stroke-width="0.8"/>
   <line x1="69" y1="80.5" x2="69.5" y2="87" stroke="#e8e0d0" stroke-width="0.8"/>
-  <!-- Lower lip shadow -->
-  <path d="M42 79.5 Q60 91 78 79.5" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
 
-  <!-- Cheek dots (LEGO style) -->
+  <!-- Cheek dots -->
   <circle cx="34" cy="75" r="3" fill="rgba(200,140,80,0.35)"/>
   <circle cx="86" cy="75" r="3" fill="rgba(200,140,80,0.35)"/>
 </svg>
