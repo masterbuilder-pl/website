@@ -1,7 +1,6 @@
 ---
 title: About Me
 layout: layout.njk
-language: en
 ---
 
 👋 Hi! I'm a young LEGO® enthusiast who loves building custom MOCs (My Own Creations) and sharing free instructions with the community. I created masterbuilder.pl to inspire others, showcase original builds, and bring together fans like you!
