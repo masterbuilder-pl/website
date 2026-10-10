@@ -1,34 +1,34 @@
 {% macro post_tiles(posts) %}
-  <div class="search-results">
-    {% for post in posts %}
-      <div class="search-tile">
-        {# The image is now wrapped in its own link to the post #}
-        <a href="{{ post.url }}" class="search-tile-img-link" aria-label="Read more about {{ post.data.title }}">
-          <div class="search-tile-img-wrap">
-            <img src="{{ post.data.image or '/favicon.png' }}" alt="{{ post.data.title }}" class="search-tile-img" />
-          </div>
-        </a>
-        <div class="search-tile-content">
-          <div class="search-tile-main">
-            {# The title is now the main link that we will "stretch" with CSS #}
-            <h3>
-              <a href="{{ post.url }}" class="stretched-link-target">{{ post.data.title }}</a>
-            </h3>
-            <div class="post-meta">
-              <span class="post-date">{{ post.date | readableDate(post.data.language) }}</span>
-            </div>
-            <p>{{ post.templateContent | striptags | truncate(120, true, '...') }}</p>
-          </div>
-          {# The tags container is now a sibling, not a child of a link, which is valid #}
-          <div class="tags-container">
-            {% for tag in post.data.tags %}
-              {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
-                <a href="/{{ post.data.language }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
-              {% endif %}
-            {% endfor %}
-          </div>
+<div class="masonry">
+  {% for post in posts %}
+    {% if loop.index == 1 %}
+      {% set tileClass = "tile tall" %}
+    {% elif loop.index == 4 %}
+      {% set tileClass = "tile wide" %}
+    {% else %}
+      {% set tileClass = "tile" %}
+    {% endif %}
+    <a class="{{ tileClass }}" href="{{ post.url }}">
+      {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
+      {% else %}
+        <div class="tile-no-image"></div>
+      {% endif %}
+      <div class="tile-overlay">
+        <div class="tile-tags">
+          {% for tag in post.data.tags %}
+            {% if tag != 'post' and tag != 'news' and tag != 'moc' %}
+              <span class="tag">{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
         </div>
+        <h2 class="tile-title">{{ post.data.title }}</h2>
+        <time class="tile-date" datetime="{{ post.date | date }}">{{ post.date | readableDate }}</time>
+        {% if post.data.rebrickable or post.data.instruction %}
+          <span class="tile-cta">Get instructions →</span>
+        {% endif %}
       </div>
-    {% endfor %}
-  </div>
+    </a>
+  {% endfor %}
+</div>
 {% endmacro %}
