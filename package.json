@@ -2,7 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "main": "app.js",
+  "type": "module",
   "scripts": {
+    "optimize": "node scripts/optimize-images.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +12,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "sharp": "^0.35.5"
+  },
+  "allowScripts": {
+    "sharp@0.35.5": true
   }
 }
