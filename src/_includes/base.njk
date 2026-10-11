@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/public/styles.css?v=3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <link rel="icon" type="image/png" href="/public/masterbuilder-gold.png?v=3">
 </head>
 <body>
@@ -72,5 +73,27 @@
 </footer>
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "307001038ff84970a9335b23a8967323"}'></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.post-hero-img, .post-image').forEach(function (img) {
+      // If img src is a .web.webp, the original is the same base with its real extension.
+      // We stored it in data-full on hero images; for post-image we try jpg then png.
+      var original = img.dataset.full || img.src
+        .replace(/\.web\.webp$/, '.jpg')
+        .replace(/\.thumb\.webp$/, '.jpg');
+
+      var a = document.createElement('a');
+      a.href = original;
+      a.className = 'glightbox';
+      a.dataset.gallery = 'post-gallery';
+      a.dataset.alt = img.alt;
+      img.parentNode.insertBefore(a, img);
+      a.appendChild(img);
+    });
+
+    GLightbox({ selector: '.glightbox', touchNavigation: true, loop: false });
+  });
+</script>
 </body>
 </html>

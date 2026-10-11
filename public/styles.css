@@ -300,7 +300,7 @@ h3 { font-size: clamp(1rem, 2.5vw, 1.3rem); }
 .post-title { font-size: clamp(1.8rem, 6vw, 3rem); color: var(--text); line-height: 1; }
 
 .post-hero-img-wrap { margin: 0 calc(var(--pad) * -1) 1.5rem; }
-.post-hero-img { width: 100%; max-height: 520px; object-fit: cover; }
+.post-hero-img { width: 100%; max-height: 520px; object-fit: cover; cursor: zoom-in; }
 
 .post-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
 
@@ -310,9 +310,9 @@ h3 { font-size: clamp(1rem, 2.5vw, 1.3rem); }
 .post-content p { margin-bottom: 1.2rem; }
 .post-content img {
   width: 100%; border-radius: var(--radius);
-  margin: 1.5rem 0;
+  margin: 1.5rem 0; cursor: zoom-in;
 }
-.post-content a { color: var(--gold); text-decoration: underline; }
+.post-content a:has(> img) { display: block; }
 .post-content h2, .post-content h3 { margin: 2rem 0 0.75rem; }
 
 /* ── Search page ── */
