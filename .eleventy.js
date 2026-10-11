@@ -19,6 +19,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Derive WebP derivative paths from an original image path
+  // e.g. /public/foo/bar.jpg → /public/foo/bar.thumb.webp
+  eleventyConfig.addFilter("thumbSrc", function (src) {
+    if (!src) return src;
+    return src.replace(/\.[^.]+$/, ".thumb.webp");
+  });
+  eleventyConfig.addFilter("webSrc", function (src) {
+    if (!src) return src;
+    return src.replace(/\.[^.]+$/, ".web.webp");
+  });
+
   eleventyConfig.addFilter("sortByDate", function (arr) {
     if (!Array.isArray(arr)) return [...arr].sort((a, b) => b.date - a.date);
     return [...arr].sort((a, b) => b.date - a.date);

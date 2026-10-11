@@ -17,7 +17,9 @@
 
   {% if image %}
     <div class="post-hero-img-wrap">
-      <img src="{{ image }}" alt="{{ title }}" class="post-hero-img">
+      <a href="{{ image }}" target="_blank" rel="noopener">
+        <img src="{{ image | webSrc }}" alt="{{ title }}" class="post-hero-img">
+      </a>
     </div>
   {% endif %}
 

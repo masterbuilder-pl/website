@@ -3,7 +3,7 @@
   {% for post in posts %}
     <a class="tile" href="{{ post.url }}">
       {% if post.data.image %}
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
+        <img src="{{ post.data.image | thumbSrc }}" alt="{{ post.data.title }}" loading="lazy">
       {% else %}
         <div class="tile-no-image"></div>
       {% endif %}
