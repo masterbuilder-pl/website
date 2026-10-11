@@ -12,8 +12,8 @@ const SKIP_DIRS = new Set(['flags']);
 const SKIP_FILES = new Set(['favicon.png', 'logo.png', 'logo-tiny.png', 'masterbuilder-gold.png', 'masterbuilder-gold-round.png']);
 
 const SIZES = [
-  { suffix: '.thumb.webp', width: 400 },
-  { suffix: '.web.webp',   width: 1200 },
+  { suffix: '.thumb.webp', width: 400, height: 400, fit: 'cover' },
+  { suffix: '.web.webp',   width: 1200,              fit: 'inside' },
 ];
 
 async function* walk(dir) {
@@ -47,15 +47,15 @@ for await (const file of walk(PUBLIC)) {
   const missing = [];
   for (const size of SIZES) {
     const dest = derivativePath(file, size.suffix);
-    try { await stat(dest); } catch { missing.push({ dest, width: size.width }); }
+    try { await stat(dest); } catch { missing.push({ dest, width: size.width, height: size.height, fit: size.fit }); }
   }
 
   if (missing.length === 0) { skipped++; continue; }
 
-  for (const { dest, width } of missing) {
+  for (const { dest, width, height, fit } of missing) {
     try {
       await sharp(file)
-        .resize({ width, withoutEnlargement: true })
+        .resize({ width, height, fit, withoutEnlargement: true, position: 'centre' })
         .webp({ quality: 82 })
         .toFile(dest);
       console.log(`  ✓ ${dest.replace(PUBLIC + '/', '')}`);
