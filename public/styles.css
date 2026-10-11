@@ -300,7 +300,7 @@ h3 { font-size: clamp(1rem, 2.5vw, 1.3rem); }
 .post-title { font-size: clamp(1.8rem, 6vw, 3rem); color: var(--text); line-height: 1; }
 
 .post-hero-img-wrap { margin: 0 calc(var(--pad) * -1) 1.5rem; }
-.post-hero-img { width: 100%; max-height: 520px; object-fit: cover; cursor: zoom-in; }
+.post-hero-img { width: 100%; height: auto; display: block; }
 
 .post-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
 
