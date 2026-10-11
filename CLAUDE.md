@@ -31,6 +31,8 @@ All source content lives in `src/`. Posts live in a single directory (English on
 
 Post frontmatter schema: `title`, `date`, `layout: layout.njk`, `tags`, `image`, `description`, and optionally `rebrickable` (Rebrickable URL) and `instruction` (free instruction PDF URL).
 
+The `image` field is automatically rendered as a full-width hero image at the top of the post by `layout.njk`. Never add it again as an inline `<img>` in the post body — that would duplicate it.
+
 Posts tagged `moc` are MOC builds. System tags excluded from display: `post`, `news`, `moc`.
 
 ### Eleventy configuration (`.eleventy.js`)
